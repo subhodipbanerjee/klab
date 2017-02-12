@@ -1,398 +1,28 @@
-<!--########### FORM VALIDATION START #################-->
-<script type="text/javascript">
-
-<!--
-
-// Form validation code will come here.
-
-function validate()
-
-{
-/*#####################PROVIDE [START] NAME ########################*/
-   if( document.sentMessage.name.value == "" )
-
-   {
-
-     alert( "Please provide your Name." );
-
-     document.sentMessage.name.focus() ;
-
-	 return false;
-
-   }
-<!--##################### PROVIDE [END] NAME ########################-->
-/*#####################PROVIDE [START] EMAIL ########################*/
-     var emailfilter=/^\w+[\+\.\w-]*@([\w-]+\.)*\w+[\w-]*\.([a-z]{2,4}|\d+)$/i
-
-var c=emailfilter.test(document.sentMessage.email.value);
-
-if(c==false)
-
-{
-
-alert("Please enter a valid Email ID.");
-
-document.sentMessage.email.focus();
-
-return false;
-
-}
-<!--##################### PROVIDE [END] EMAIL ########################-->
-/*#####################PROVIDE [START] PHONE ########################*/
-    var a = document.sentMessage.phone.value;
-
-if(a=="")
-
-{
-
-alert("Contact number can't be Blank");
-
-document.sentMessage.phone.focus();
-
-return false;
-
-}
-
-if(isNaN(a))
-
-{
-
-alert("Please provide a valid 10 digit Mobile Number.");
-
-document.sentMessage.phone.focus();
-
-return false;
-
-}
-
-if((a.length < 10) || (a.length > 10))
-
-{
-
-alert("Please provide a valid 10 digit Mobile Number.");
-
-document.sentMessage.phone.select();
-
-return false;
-
-}
-<!--##################### PROVIDE [END] PHONE ########################-->
-/*#####################PROVIDE [START] NAME ########################*/
-   if( document.sentMessage.message.value == "" )
-
-   {
-
-     alert( "Please write your message." );
-
-     document.sentMessage.message.focus() ;
-
-	 return false;
-
-   }
-<!--##################### PROVIDE [END] NAME ########################-->
-
-
-return( true );
-
-}
-
-</script>
-
-<!--########### FORM VALIDATION END #################-->
-
-
-<!DOCTYPE html>
-<html>
-
-<head>
-
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">    
- <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="keywords" content="Knowledgelab - E-learning, Finishing School, Software Training, Technology Training, Tech Enabled Learning, Engineering College, Digital Library, Mini Project, Major Project, Final Semester Project,"/>	
-<meta name="description" content="The finest subject wise reference material for engineering and BCA/MCA students on Windows and Android."/>
-<meta name="ROBOTS" content="ALL"/>
-<meta http-equiv="content-language" content="en,fr,HI,BN,OR"/>
-<meta name="geo.position" content="22.572646;88.363895"/>
-<meta name="geo.placename" content="sector-v,saltlake, Kolkata, INDIA"/>
-<meta name="geo.region" content="IN-WB"/>
-<title>Knowledgelab - E-learning | Finishing School | Software Training | Technology Training | Tech Enabled Learning | Engineering College</title>
-<link rel="shortcut icon" href="images/logoIcon.gif" style="height:95%; width:90%;" type="image/x-icon" >
-    <link rel="stylesheet" href="css/animate.min.css" type="text/css">
-    <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/vegas.min.css">
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
-    <!-- Custom CSS -->
-    <link href="css/scrolling-nav.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-    
-    
-    <!-- media queries css -->
-		<<link href="css/media-queries.css" rel="stylesheet" type="text/css">
-		<link href="css/media-queries_attach.css" rel="stylesheet" type="text/css">
-		<link rel="stylesheet" href="css/font-awesome.css"/>
-		<link rel="stylesheet" href="css/font-awesome-animation.min.css">
-
-
-</head>
-
-<!-- The #page-top ID is part of the scrolling feature - the data-spy and data-target are part of the built-in Bootstrap scrollspy function -->
-
-<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
-  <script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>  
-
-    <script src="js/jquery-1.12.0.min.js">            
-        </script>
-        <script src="js/vegas.min.js"></script>
-        <script>
-           $("body").vegas({
-            slides: [
-               
-                
-              
-                
-            ],
-            animation: []
-        });
-        </script>
-
-<!--header bar Code Starting point -->
-
-<!-- <div class="header">
-  <div class="container">
-    <div class="row"> 
-    <div class="col-md-8 col-xs-hidden col-sm-hidden"> </div>
-    <div class="col-md-4">
-      <ul class="header-bar">
-        <li><a href="">login</a></li>
-        <li><a href="">register</a></li>
-      </ul>
-    </div>
-
-    </div>
-   </div>
-</div> -->
-<!-- header bar Code Ending Point-->
-
-<!-- Navigation Code Starting point-->
+<?php include('includes/header.php'); ?>
+  <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+    <script src="js/jquery-1.12.0.min.js"></script>
+    <script src="js/vegas.min.js"></script>
     <nav class="navbar navbar-default navbar-fixed-top navbar-border" role="navigation">
-          <!--header bar Code Starting point -->
       <div class="header col-lg-12 col-md-4">
-          <div class=" pull-right">
-            <ul class="header-bar">
-              <li><a href="#" role="button" data-toggle="modal" data-target="#login-modal">login</a></li>
-              <li><a href="#" role="button" data-toggle="modal" data-target="#register-modal">register</a></li>
-            </ul>
-          </div>
-
-
-          <!-- BEGIN # MODAL LOGIN -->
-            
-              <div class="modal fade container" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
-             
-                <div class="modal-dialog">
-                <div class="modal-content">
-                  <div class="modal-header" align="center">
-                    <img class="img-squre" id="img_logo" src="images/knowledge_png.png">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                      <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
-                    </button>
-                  </div>
-                          
-                          <!-- Begin # DIV Form -->
-                          <div id="div-forms">
-                          
-                              <!-- Begin # Login Form -->
-                              <form id="login-form">
-                              <div class="modal-body">
-
-                              <div class="fblogin"><a class="fbloginBtn" onclick="">Login with facebook account</a></div>
-
-                              <div class="knowledgelablogin"> <span style="padding-left: 10px;"> --Or Login With knowledgelab Account--</span></div>
-                          <div id="div-login-msg">
-                                          <div id="icon-login-msg" class="glyphicon glyphicon-chevron-right"></div>
-                                          <span id="text-login-msg">Type your username and password.</span>
-                                      </div>
-                          <input id="login_username" class="form-control" type="text" placeholder="Username" required>
-                          <input id="login_password" class="form-control" type="password" placeholder="Password" required>
-                                      <div class="checkbox">
-                                          <label>
-                                              <input type="checkbox"> Remember me
-                                          </label>
-                                      </div>
-                            </div>
-                          <div class="modal-footer">
-                                      <div>
-                                          <button type="submit" class="btn btn-primary btn-lg btn-block">Login</button>
-                                      </div>
-                            <div>
-                                          <button id="login_lost_btn" type="button" class="btn btn-link">Lost Password?</button>
-                                          <button id="login_register_btn" type="button" class="btn btn-link">Register</button>
-                                      </div>
-                          </div>
-                              </form>
-                              <!-- End # Login Form -->
-                              
-                              <!-- Begin | Lost Password Form -->
-                              <form id="lost-form" style="display:none;">
-                            <div class="modal-body">
-                          <div id="div-lost-msg">
-                                          <div id="icon-lost-msg" class="glyphicon glyphicon-chevron-right"></div>
-                                          <span id="text-lost-msg">Type your e-mail.</span>
-                                      </div>
-                          <input id="lost_email" class="form-control" type="text" placeholder="E-Mail (type ERROR for error effect)" required>
-                            </div>
-                          <div class="modal-footer">
-                                      <div>
-                                          <button type="submit" class="btn btn-primary btn-lg btn-block">Send</button>
-                                      </div>
-                                      <div>
-                                          <button id="lost_login_btn" type="button" class="btn btn-link">Log In</button>
-                                          <button id="lost_register_btn" type="button" class="btn btn-link">Register</button>
-                                      </div>
-                          </div>
-                              </form>
-                              <!-- End | Lost Password Form -->
-                              
-                              <!-- Begin | Register Form -->
-                              <form id="register-form" style="display:none;">
-                                <div class="modal-body">
-
-                                  <div class="fblogin"><a class="fbloginBtn" onclick="">Login with facebook account</a></div>
-                                  <div class="knowledgelablogin"> <span style="padding-left: 10px;"> --Or Login With knowledgelab Account--</span></div>
-
-                                  <div id="div-register-msg">
-                                      <div id="icon-register-msg" class="glyphicon glyphicon-chevron-right"></div>
-                                      <span id="text-register-msg">Register an account.</span>
-                                  </div>
-                                  <input id="register_username" class="form-control" type="text" placeholder="Username (type ERROR for error effect)" required>
-                                  <input id="register_email" class="form-control" type="text" placeholder="E-Mail" required>
-                                  <input id="register_password" class="form-control" type="password" placeholder="Password" required>
-                                </div>
-                                <div class="modal-footer">
-                                  <div>
-                                      <button type="submit" class="btn btn-primary btn-lg btn-block">Register</button>
-                                  </div>
-                                  <div>
-                                      <button id="register_login_btn" type="button" class="btn btn-link">Log In</button>
-                                      <button id="register_lost_btn" type="button" class="btn btn-link">Lost Password?</button>
-                                  </div>
-                                </div>  
-                              </form>
-                              <!-- End | Register Form -->
-                              
-                          </div>
-                          <!-- End # DIV Form -->
-                          
-                </div>
-              </div>
-            </div>
-              <!-- END # MODAL LOGIN  -->
-
-          <!-- Register Modal Starting Point -->
-
-            <div class="modal fade container" id="register-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
-                <div class="modal-dialog">
-                <div class="modal-content">
-                  <div class="modal-header" align="center">
-                    <img class="img-squre" id="img_logo" src="images/knowledge_png.png">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                      <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
-                    </button>
-                  </div>         
-                    <!-- Begin # DIV Form -->
-                    <div id="div-forms">
-                      <!-- Begin | Register Form -->
-                      <form id="register-form" style="display:show;">
-                        <div class="modal-body">
-                          <div class="fblogin"><a class="fbloginBtn" onclick="">Login with facebook account</a></div>
-                          <div class="knowledgelablogin"> <span style="padding-left: 10px;"> --Or Login With knowledgelab Account--</span></div>
-                          <div id="div-register-msg">
-                            <div id="icon-register-msg" class="glyphicon glyphicon-chevron-right"></div>
-                            <span id="text-register-msg">Register an account.</span>
-                          </div>
-                          <input id="register_username" class="form-control" type="text" placeholder="Username" required>
-                          <input id="register_email" class="form-control" type="text" placeholder="E-Mail" required>
-                          <input id="register_password" class="form-control" type="password" placeholder="Password" required>
-                          <input id="register_mobileNo" class="form-control" type="Mobile" placeholder="Mobile no." required>
-                          <textarea class="form-control" rows="1" id="address" type="address" placeholder="Address"></textarea>
-
-                          <div class="col-md-6"><input id="register_city" class="form-control" type="text" placeholder="City" required></div>
-
-                          <div class="col-md-6"><input id="register_pincode" class="form-control" type="pincode" placeholder="Pincode" required></div>
-                          
-
-                          
-
-                          <input id="register_college" class="form-control" type="text" placeholder="College Name" required>
-
-
-                          <div class="col-md-6">
-                            <select id="country" class="form-control" type="Mobile" placeholder="Stream">
-                              <option>stream 1</option>
-                              <option>stream 2</option>
-                              <option>stream 3</option>
-                              <option>stream 4</option>
-                              <option>stream 5</option>
-                              <option>stream 6</option>
-                              <option>stream 7</option>
-                              <option>stream 8</option>
-                            </select>
-                          </div>
-
-                          <div class="col-md-6"><input id="register_year" class="form-control" type="text" placeholder="Year" required></div>
-                          
-                          <div class="col-md-6"><input type="radio" id="femaleRadio" value="Female">Student </div>
-                          <div class="col-md-6"><input type="radio" id="maleRadio" value="Male">Teacher </div>
-                        </div>
-                        <div class="modal-footer">
-                          <div>
-                              <button type="submit" class="btn btn-primary btn-lg btn-block">Register</button>
-                          </div>
-                        </div>
-                      </form>
-                      <!-- End | Register Form -->
-                    </div>
-                    <!-- End # DIV Form -->  
-                </div>
-              </div>
-            </div>
-
-          <!-- Register Modal Ending Point -->
-
-          </div>
-            <!-- header bar Code Ending Point-->  
-
+        <div class=" pull-right">
+          <ul class="header-bar">
+            <li><a href="#" role="button" data-toggle="modal" data-target="#login-modal">login</a></li>
+            <li><a href="#" role="button" data-toggle="modal" data-target="#register-modal">register</a></li>
+          </ul>
+        </div>
+        <?php include('includes/login_reg_modal.php'); ?>
+      </div>
       <a class="navbar-brand page-scroll klimg" href="#page-top"><img src="images/knowledge_png.png" style=" height: 170px; padding-bottom: 110px; bottom: 110px;margin-left: 20px"></a>
     	<div class="navbar-header page-scroll">
      		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
         </button>          
       </div>
-
-
-
-          <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse navbar-ex1-collapse navbar-top" style=" padding-right: 20px" > 
         <ul class="nav navbar-nav navbar-right ">
-          <!-- <li><a class="page-scroll" href="http://www.testezee.com" target="windowname"><h4 style="color: #333; font-family: myFirstFont">Online Test</h4></a></li> -->
           <li><a class="page-scroll" href="#submenu"><h4 style="color: #333; font-family: myFirstFont; font-size: 16px; ">LEARNING APP</h4></a></li>
           <li><a class="page-scroll" href="#menu2"><h4 style="color: #333; font-family: myFirstfont; font-size: 16px;">TRAINING LAB</h4></a></li>
           <li class="visible-xs"><a class="page-scroll" href="#menu5"><h5 style="color: #333; margin-top: 0px; font-family: myFirstFont">Testimonial</h5></a></li>
@@ -401,38 +31,28 @@ return( true );
           <li class="visible-xs"><a class="page-scroll" href="index1.html#submenu8"><h5 style="color: #333; margin-top: 0px;font-family: myFirstFont">Work With Us</h5></a></li>
           <li class="visible-xs"><a class="page-scroll" href="#contact"><h5 style="color: #333; margin-top: 0px;font-family: myFirstFont">Contact us</h5></a></li>   
           <li class="custom-dropdown hidden-xs">
-              <div class="holder">                             
-                <button class="btn dropbtton mybtn" onclick="myFunction()">
-                    <i class="fa fa-bars"> </i>MENU
-                </button>
-                <div id="myDropdown" class="dropdown-content">
-                    <a class="page-scroll" href="#menu5"><h5 style="color: #333; margin-top: 0px; font-family: myFirstFont">Testimonial</h5></a>
-                    <a class="page-scroll" href="index1.html#submenu6"><h5 style="color: #333; margin-top: 0px;font-family: myFirstFont">Mission</h5></a>
-                    <a class="page-scroll" href="index1.html#submenu4"><h5 style="color: #333; margin-top: 0px;font-family: myFirstFont">About Us</h5></a>
-                    <a class="page-scroll" href="index1.html#submenu8"><h5 style="color: #333; margin-top: 0px;font-family: myFirstFont">Work With Us</h5></a>
-                    <a class="page-scroll" href="#contact"><h5 style="color: #333; margin-top: 0px;font-family: myFirstFont">Contact us</h5></a>
-                </div>
-                <!-- <a  href="https://www.facebook.com/KnowledgeLab-World-865527740189412/?fref=ts" target="windowname"><img class="fb" src="images/facebook.png" style="padding-top: 0px;padding-left: 20px;padding-right: 20px"></a> -->
+            <div class="holder">                             
+              <button class="btn dropbtton mybtn" onclick="myFunction()">
+                <i class="fa fa-bars"> </i>MENU
+              </button>
+              <div id="myDropdown" class="dropdown-content">
+                <a class="page-scroll" href="#menu5"><h5 style="color: #333; margin-top: 0px; font-family: myFirstFont">Testimonial</h5></a>
+                <a class="page-scroll" href="index1.html#submenu6"><h5 style="color: #333; margin-top: 0px;font-family: myFirstFont">Mission</h5></a>
+                <a class="page-scroll" href="index1.html#submenu4"><h5 style="color: #333; margin-top: 0px;font-family: myFirstFont">About Us</h5></a>
+                <a class="page-scroll" href="index1.html#submenu8"><h5 style="color: #333; margin-top: 0px;font-family: myFirstFont">Work With Us</h5></a>
+                <a class="page-scroll" href="#contact"><h5 style="color: #333; margin-top: 0px;font-family: myFirstFont">Contact us</h5></a>
               </div>
-          </li>                       
-      	</ul><!-- /.navbar-collapse -->                                  
-  		</div><!-- /.container -->  
-
+            </div>
+          </li>
+      	</ul>
+  		</div>
     </nav>
-<!-- Navigation Code End-->   
-
-<!-- Carousel and Video Embeded Code Starting Point--> 
     <section id="intro" class="intro-section">
       <div class="container intro-container">
         <div class="intro-sec  col-md-6">
         	<div class="video" style="text-align: center;">
-
           <i class="fa fa-play-circle-o fa-4" aria-hidden="true" style="font-size: 60px; color:  #9ab51f;"> </i>
           <h4 style="font-size: 16px; color:  #FFF; text-align: center;">VIEW DEMO</h4>
-
-           <!-- <div class="howit-works-video">
-              <iframe width="460" height="290" src="https://www.youtube.com/embed/kZxfDNW5WSA" frameborder="0"  webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe><br>                  
-            </div> -->            
 					</div>
 					<div class="col-md-4 col-md-offset-2 video-btn"><button class="page-scroll btn btn-xl app-btn" onClick="location.href='#'">FREE TRAIL</button></div>
 					<div class="col-md-2 video-btn" ><button class="page-scroll btn btn-xl app-btn" onClick="location.href='#'">SUBSCRIBE</button></div>
@@ -441,7 +61,6 @@ return( true );
         <div class="intro-text col-md-4 col-xs-hidden col-sm-hidden">
           <div class="container">
              <div class="text" style="text-align: left; font-family: myFirstFont; font-size: 18px; float: right; font-weight: bold;">
-
                <p style="color:  #9ab51f;"> Excel in college</p>
                <p style="color:  #fff;"> With the worlds first <br> Learning App with best <br> open source content <br> mapped to your syllabus.</p><br><br>
                <p style="color:  #9ab51f; font-size:15px; ">GET READY FOR TOMORROW. TODAY.</p>
@@ -449,215 +68,76 @@ return( true );
           </div>
         </div>      
       </div>
-      
     </section>
     <hr class="image-bottom-boder"></hr>
-<!--Carousel and Video Embeded Code Ending Point-->
-
-<!--HOME SECTION TAG LINE START COADING-->  
     <div  class="tag-line" >
-         <div class="container">
-           <div class="row  text-center" >
-           
-               <div class="col-lg-12  col-md-12 col-sm-12">
-               <p>IN THE LAST 2 YEARS, 8500 ENGINEERING STUDENTS STUDIED FROM THE KNOWLEDGELAB APP TO MASTER</BR> THE SUBJECTS TAUGHT IN CLASS, PRACTICE AND APPLY THEIR KNOWLEDGE TO EXCELIN THE UNIVERSITY EXAMS. </p>
-               
-        <!-- <h2 data-scroll-reveal="enter from the bottom after 0.1s" ><i class="fa fa-circle-o-notch"></i> Welcome To Knowledge Lab. <i class="fa fa-circle-o-notch"></i> </h2> -->
-                   </div>
-               </div>
-             </div>
-        
+      <div class="container">
+        <div class="row  text-center">
+          <div class="col-lg-12 col-md-12 col-sm-12">
+            <p>IN THE LAST 2 YEARS, 8500 ENGINEERING STUDENTS STUDIED FROM THE KNOWLEDGELAB APP TO MASTER</BR> THE SUBJECTS TAUGHT IN CLASS, PRACTICE AND APPLY THEIR KNOWLEDGE TO EXCELIN THE UNIVERSITY EXAMS. </p>
+          </div>
+        </div>
+      </div>  
     </div>
-    <!--HOME SECTION TAG LINE END--> 
-   
-        <section id="services" class="bg-light-gray portfolio-background submenu1-section">
-        <div class="container" >
-            <div class="row">
-                <div class="col-lg-12 ">
-                    <h2 class="section-heading">Guiding students through college years <br>and connecting to the industry.</h2>
-                    <hr class="primary">
-                                        
-                </div>
-            
-            <script type="text/javascript" src="js/jssor.slider.min.js"></script>
-    <!-- use jssor.slider.debug.js instead for debug -->
-    <script>
-        jssor_1_slider_init = function() {
-            
-            var jssor_1_options = {
-              $AutoPlay: false,
-              $AutoPlaySteps: 1,
-              $SlideDuration: 1500,
-            
-              $SlideWidth: 275,
-              $SlideHeight: 600,              
-              $SlideSpacing: 3,
-              $Cols: 4,
-              $ArrowNavigatorOptions: {
-                $Class: $JssorArrowNavigator$,
-                $Steps: 1
-              },
-              $BulletNavigatorOptions: {
-                $Class: $JssorBulletNavigator$,
-                $SpacingX: 1,
-                $SpacingY: 1
-              }
-            };
-            
-            var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
-            
-            //responsive code begin
-            //you can remove responsive code if you don't want the slider scales while window resizing
-            function ScaleSlider() {
-                var refSize = jssor_1_slider.$Elmt.parentNode.clientWidth;
-                if (refSize) {
-                    refSize = Math.min(refSize, 809);
-                    jssor_1_slider.$ScaleWidth(refSize);
-                    
-                }
-                else {
-                    window.setTimeout(ScaleSlider, 30);
-                }
-            }
-            ScaleSlider();
-            $Jssor$.$AddEvent(window, "load", ScaleSlider);
-            $Jssor$.$AddEvent(window, "resize", ScaleSlider);
-            $Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
-            //responsive code end
-        };
-    </script>
-
-    <style>
-        
-        /* jssor slider bullet navigator skin 03 css */
-        /*
-        .jssorb03 div           (normal)
-        .jssorb03 div:hover     (normal mouseover)
-        .jssorb03 .av           (active)
-        .jssorb03 .av:hover     (active mouseover)
-        .jssorb03 .dn           (mousedown)
-        */
-       .jssorb03 {
-            position: absolute;
-        }
-        
-        .jssorb03 div { background-position: -5px -4px; }
-        .jssorb03 div:hover, .jssorb03 .av:hover { background-position: -35px -4px; }
-        .jssorb03 .av { background-position: -65px -4px; }
-        .jssorb03 .dn, .jssorb03 .dn:hover { background-position: -95px -4px; }  
-
-        /* jssor slider arrow navigator skin 03 css */
-        /*
-        .jssora03l                  (normal)
-        .jssora03r                  (normal)
-        .jssora03l:hover            (normal mouseover)
-        .jssora03r:hover            (normal mouseover)
-        .jssora03l.jssora03ldn      (mousedown)
-        .jssora03r.jssora03rdn      (mousedown)
-        */
-        .jssora03l, .jssora03r {
-            display: block;
-            position: absolute;
-            /* size of arrow element */
-            width: 55px;
-            height: 55px;
-            cursor: pointer;
-            background: url('images/a03.png') no-repeat;
-            overflow: hidden;
-            
-            
-        }
-        
-        .jssora03l { background-position: -3px -33px; }
-        .jssora03r { background-position: -63px -33px; }
-        .jssora03l:hover { background-position: -123px -33px; }
-        .jssora03r:hover { background-position: -183px -33px; }
-        .jssora03l.jssora03ldn { background-position: -243px -33px; }
-        .jssora03r.jssora03rdn { background-position: -303px -33px; }
-    </style>
-
-
-    <div id="jssor_1" style="position: relative; margin: 0 auto; top: 0px; left: 0px; width: 840px; height: 400px; overflow: hidden; visibility: hidden;">
-        
-        
-        
-        <div data-u="slides" style="cursor: default; position: absolute;top: 50px; left: 10px; width: 1000px; height: 600px;overflow: hidden">
-            <div class="col-md-4 col-sm-6 portfolio-item">
-                    
+    <section id="services" class="bg-light-gray portfolio-background submenu1-section">
+      <div class="container" >
+        <div class="row">
+          <div class="col-lg-12 ">
+            <h2 class="section-heading">Guiding students through college years <br>and connecting to the industry.</h2>
+            <hr class="primary">
+          </div>
+          <div id="jssor_1" style="position: relative; margin: 0 auto; top: 0px; left: 0px; width: 840px; height: 400px; overflow: hidden; visibility: hidden;">
+            <div data-u="slides" style="cursor: default; position: absolute;top: 50px; left: 10px; width: 1000px; height: 600px;overflow: hidden">
+              <div class="col-md-4 col-sm-6 portfolio-item">
                 <div class="portfolio-caption bottom-section1" style=" text-align: center; background-color: #f9f9f9">
                   <div class="title-area">
                     <img src="images/service/Log_in.png" class="img-responsive" alt="myimg" style=" padding: 27px 40px 10px 70px">
-                    
                     <h4 style="color: #006cae;"> A tech-enabled <br>learning system</h4>
-                        
-                        
                     <h5 class="text-muted text1 title" style=" font-size: 14px"><br>The Learning App makes <br> the subjects super easy <br> to understand. Accessible <br>offline, our students<br> study anywhere, anytime in<br>  big cities or small towns. <br><br><br></h5>
-
                   </div>
-                    </div>
-                <br>
-                
                 </div>
-           <div class="col-md-4 col-sm-6 portfolio-item">
-                    
+                <br>
+              </div>
+              <div class="col-md-4 col-sm-6 portfolio-item">
                 <div class="portfolio-caption bottom-section1" style=" text-align: center; background-color: #f9f9f9">
-                   <div class="title-area">
+                  <div class="title-area">
                     <img src="images/service/Training.png" class="img-responsive" alt="myimg" style=" padding: 25px 40px 8px 70px">
-                    
                     <h4 style="color: #006cae;">Develop skills on <br>emerging technologies</h4>
-                        
                     <h5 class="text-muted text1 title" style=" font-size: 14px"><br>Our online and offline <br>trainings, workshops and <br>internships help our<br> students to be skilled <br>in technologies sought<br> by the industry.<br><br><br></h5>
-
-                   </div>
-                    </div>
-                <br>
-                
-                </div><div class="col-md-4 col-sm-6 portfolio-item">
-                    
-                <div class="portfolio-caption bottom-section1" style=" text-align: center; background-color: #f9f9f9">
-                   <div class="title-area">
-                    <img src="images/service/Apply_contact.png" class="img-responsive" alt="myimg" style=" padding: 25px 40px 15px 60px">
-                    
-                    <h4 style="color: #006cae;">Connect to the industry</h4>
-                        
-                    <h5 class="text-muted text1 title" style=" font-size: 14px"><br>Students can apply <br>directly to hundreds of <br>job opportunities.<br> <br>Employers can view progress<br> through college and judge<br> the students’ strengths. <br><br><br></h5>
-                   </div>
-
-                    </div>
-                <br>
-                
+                  </div>
                 </div>
-           
-               
-            
+                <br>
+              </div>
+              <div class="col-md-4 col-sm-6 portfolio-item">
+                <div class="portfolio-caption bottom-section1" style=" text-align: center; background-color: #f9f9f9">
+                  <div class="title-area">
+                    <img src="images/service/Apply_contact.png" class="img-responsive" alt="myimg" style=" padding: 25px 40px 15px 60px">
+                    <h4 style="color: #006cae;">Connect to the industry</h4>
+                    <h5 class="text-muted text1 title" style=" font-size: 14px"><br>Students can apply <br>directly to hundreds of <br>job opportunities.<br> <br>Employers can view progress<br> through college and judge<br> the students’ strengths. <br><br><br></h5>
+                  </div>
+                </div>
+                <br>
+              </div>
+            </div>
+            <span data-u="arrowleft" class="jssora03l" style="top: 0px;left:12px;width:55px;height:55px;" data-autocenter="2"></span>
+            <span data-u="arrowright" class="jssora03r" style="top: 0px;right:0px;width:55px;height:55px;" data-autocenter="2"></span>
+            <a href="http://www.jssor.com" style="display:none">Slideshow Maker</a>
+          </div>
+          <script>
+            jssor_1_slider_init();
+          </script>
         </div>
-        <!-- Bullet Navigator -->
-        
-        <!-- Arrow Navigator -->
-        <span data-u="arrowleft" class="jssora03l" style="top: 0px;left:12px;width:55px;height:55px;" data-autocenter="2"></span>
-        <span data-u="arrowright" class="jssora03r" style="top: 0px;right:0px;width:55px;height:55px;" data-autocenter="2"></span>
-        <a href="http://www.jssor.com" style="display:none">Slideshow Maker</a>
-    </div>
-    <script>
-        jssor_1_slider_init();
-    </script>
-        </div>
-        </div>
+      </div>
     </section>
-   
-    <!-- Intro Section -->
-    
-  <section id="menu2" class="bg-light-gray portfolio-background menu2-section">
+    <section id="menu2" class="bg-light-gray portfolio-background menu2-section">
         <div class="container" >
             <div class="row">
                 <div class="col-lg-12 ">
-                    <h1 class="text-center border-sider">
-                        <span>Summer Training Programs</span>    </h1>
-                                        
+                  <h1 class="text-center border-sider">
+                    <span>Summer Training Programs</span>    
+                  </h1>                                        
                 </div>
-            
             <script type="text/javascript" src="js/jssor.slider.min.js"></script>
-    <!-- use jssor.slider.debug.js instead for debug -->
     <script>
         jssor_51_slider_init = function() {
             
@@ -1870,12 +1350,9 @@ and open the template in the editor.
                 }
         </script>
     <!-- Scrolling Nav JavaScript -->
-    <script src="js/jquery.easing.min.js"></script>
-    
-
-    
+    <script src="js/jquery.easing.min.js"></script>    
     <script src="js/animated_menu_and_scrollpy.js"></script>
-    <script src="js/modal.js"></script>
+    <!-- // <script src="js/modal.js"></script> -->
     <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
