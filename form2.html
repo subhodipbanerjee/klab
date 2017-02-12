@@ -1,0 +1,471 @@
+<!--########### FORM VALIDATION START #################-->
+<script type="text/javascript">
+
+function validate()
+
+{
+/*#####################PROVIDE [START] PHONE ########################*/
+    var a = document.programfee.mobile.value;
+
+if(a=="")
+
+{
+
+alert("Mobile number can't be Blank");
+
+document.programfee.mobile.focus();
+
+return false;
+
+}
+
+if(isNaN(a))
+
+{
+
+alert("Please provide a valid 10 digit Mobile Number.");
+
+document.programfee.mobile.focus();
+
+return false;
+
+}
+
+if((a.length < 10) || (a.length > 10))
+
+{
+
+alert("Please provide a valid 10 digit Mobile Number.");
+
+document.programfee.mobile.select();
+
+return false;
+
+}
+<!--##################### PROVIDE [END] PHONE ########################-->
+/*##################### [RADIO 1] START ########################*/
+var chks = document.getElementsByName('programfee');
+
+var hasChecked = false;
+
+for (var i = 0; i < chks.length; i++)
+
+{
+
+	if (chks[i].checked)
+
+	{
+
+	hasChecked = true;
+
+	break;
+
+	}
+
+}
+
+
+
+if (hasChecked == false)
+
+	{
+
+	alert("Please select your program fee.");
+
+	return false;
+
+	}
+/*##################### [RADIO 2] START ########################*/
+   var chks = document.getElementsByName('payment_option');
+
+var hasChecked = false;
+
+for (var i = 0; i < chks.length; i++)
+
+{
+
+	if (chks[i].checked)
+
+	{
+
+	hasChecked = true;
+
+	break;
+
+	}
+
+}
+
+
+
+if (hasChecked == false)
+
+	{
+
+	alert("Please choose your payment option.");
+
+	return false;
+
+	}
+
+<!--##################### PROVIDE [END] NAME ########################-->
+
+
+return( true );
+
+}
+
+</script>
+
+<!--########### FORM VALIDATION END #################-->
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">    
+ <meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="keywords" content="Knowledgelab - E-learning, Finishing School, Software Training, Technology Training, Tech Enabled Learning, Engineering College, Digital Library, Mini Project, Major Project, Final Semester Project,"/>	
+<meta name="description" content="The finest subject wise reference material for engineering and BCA/MCA students on Windows and Android."/>
+<meta name="ROBOTS" content="ALL"/>
+<meta http-equiv="content-language" content="en,fr,HI,BN,OR"/>
+<meta name="geo.position" content="22.572646;88.363895"/>
+<meta name="geo.placename" content="sector-v,saltlake, Kolkata, INDIA"/>
+<meta name="geo.region" content="IN-WB"/>
+<title>Knowledgelab - E-learning | Finishing School | Software Training | Technology Training | Tech Enabled Learning | Engineering College</title>
+<link rel="shortcut icon" href="images/logoIcon.gif" style="height:95%; width:90%;" type="image/x-icon" >
+    <link rel="stylesheet" href="css/animate.min.css" type="text/css">
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/vegas.min.css">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+    <!-- Custom CSS -->
+    <link href="css/scrolling-nav.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    
+    <!-- media queries css -->
+<link href="css/media-queries.css" rel="stylesheet" type="text/css">
+<link href="css/media-queries_attach.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="css/font-awesome.css"/>
+<link rel="stylesheet" href="css/font-awesome-animation.min.css">
+
+
+</head>
+
+<!-- The #page-top ID is part of the scrolling feature - the data-spy and data-target are part of the built-in Bootstrap scrollspy function -->
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+  <script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>  
+
+    <script src="js/jquery-1.12.0.min.js">            
+        </script>
+        <script src="js/vegas.min.js"></script>
+        <script>
+           $("body").vegas({
+            slides: [
+               
+                
+              
+                
+            ],
+            animation: []
+        });
+        </script>
+    <!-- Navigation -->
+   <nav class="navbar navbar-default navbar-fixed-top navbar-border" role="navigation">
+       <a class="navbar-brand page-scroll" href="index.html#page-top"><img src="images/knowledge_png.png" style=" height: 170px; padding-bottom: 110px; bottom: 110px;"></a>
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse navbar-top" style=" padding-right: 20px" >
+                
+                <ul class="nav navbar-nav navbar-right ">
+                    <li><a class="page-scroll" href="index.html#submenu"><h4 style="color: #333; font-family: myFirstFont">Learning App</h4></a></li>                        
+                        <li><a class="page-scroll" href="index.html#menu2"><h4 style="color: #333; font-family: myFirstfont">Training Lab</h4></a></li>
+                        <li class="visible-xs"><a class="page-scroll" href="index.html#menu5"><h5 style="color: #333; margin-top: 0px; font-family: myFirstFont">Testimonial</h5></a></li>
+                        <li class="visible-xs"><a class="page-scroll" href="index1.html#submenu6"><h5 style="color: #333; margin-top: 0px;font-family: myFirstFont">Mission</h5></a></li>
+                        <li class="visible-xs"><a class="page-scroll" href="index1.html#submenu4"><h5 style="color: #333; margin-top: 0px;font-family: myFirstFont">About Us</h5></a></li>
+                        <li class="visible-xs"><a class="page-scroll" href="index1.html#submenu8"><h5 style="color: #333; margin-top: 0px;font-family: myFirstFont">Work With Us</h5></a></li>
+                        <li class="visible-xs"><a class="page-scroll" href="index.html#contact"><h5 style="color: #333; margin-top: 0px;font-family: myFirstFont">Contact us</h5></a></li>
+                        
+                        
+                        <li class="custom-dropdown hidden-xs">
+                            <div class="holder">                             
+                                <button class="btn btn-default dropbtton mybtn" onclick="myFunction()">
+                                    <i class="fa fa-bars"></i>
+                                </button>
+                                <div id="myDropdown" class="dropdown-content">
+                                    <a class="page-scroll" href="index.html#menu5"><h5 style="color: #333; margin-top: 0px; font-family: myFirstFont">Testimonial</h5></a>
+                                    <a class="page-scroll" href="index1.html#submenu6"><h5 style="color: #333; margin-top: 0px;font-family: myFirstFont">Mission</h5></a>
+                                    <a class="page-scroll" href="index1.html#submenu4"><h5 style="color: #333; margin-top: 0px;font-family: myFirstFont">About Us</h5></a>
+                                    <a class="page-scroll" href="index1.html#submenu8"><h5 style="color: #333; margin-top: 0px;font-family: myFirstFont">Work With Us</h5></a>
+                                    <a class="page-scroll" href="index.html#contact"><h5 style="color: #333; margin-top: 0px;font-family: myFirstFont">Contact us</h5></a>
+                                    <link href="css/scrolling-nav.css" rel="stylesheet" type="text/css"/>
+                                </div>
+                                 <a  href="https://www.facebook.com/KnowledgeLab-World-865527740189412/?fref=ts" target="windowname"><img class="fb" src="images/facebook.png" style="padding-top: 0px;padding-left: 20px;padding-right: 20px"></a>
+                            </div>
+                            
+                        </li>
+                        
+                        
+                        
+                      </ul>
+                                   
+            </div>
+           
+            
+           
+           
+           
+            <!-- /.navbar-collapse -->
+      
+        <!-- /.container -->
+    </nav>
+    <section id="form" class="form-section">
+       <form action="insertprogram_fee.php" method="post" name="programfee" onSubmit="return(validate());" >
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 enrf text-center">
+  <header>
+      <h2 style="text-align: left;font-family: myFirstFont;font-size: 24">Summer Training Enrollment Form&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pg 2</h2>
+   
+  </header>
+                    <div class="row">
+                    
+    <div class="mno col-md-12">
+        <h3 style="margin-top: 8px; color: white;font-size: 18px;font-family: myFirstFont ">3. Mobile No.</h3>
+            </div>
+     
+  </div>
+                        <div class="row">                                                          
+                            
+                            <div class="mnof col-md-12">
+                                <div class="form-group">
+                                    <textarea class="form-control" Style="width: 50%;font-family: myFirstFont;height: 40px" placeholder="Mobile *" name="mobile"></textarea>
+                                 
+                                </div>
+                            </div>                         
+                   </div>
+                    <div class="row">
+                        <div>
+    <fieldset>
+    
+        <div class="pull-left" style="text-align: left">
+            <div class="pfee col-md-6">
+        <h3 style="margin-top: 8px;color: white;font-size: 18px;font-family: myFirstFont">4. Program Fee</h3>
+            </div>
+            
+            <div class="pfeef">
+      	<input id="radioDefault_5" name="programfee" type="hidden" value="">
+        <div class="pfeefg" style="margin-top: 30px;p">
+      		<input id="Field5_0" name="programfee" type="radio" value="For Me" tabindex="5" >
+                <label class="choice" for="Field5_0">For Me : <i class="fa fa-inr" style="font-size:14px; font-weight:100;"></i> 4,850 per Student </label>
+      	</div>
+        <div>
+        	<input id="Field5_1" name="programfee" type="radio" value="For Me + 1" tabindex="6">
+        	<label class="choice" for="Field5_1">For Me + 1 Friend : 5% OFF : <i class="fa fa-inr" style="font-size:14px; font-weight:100;"></i> 4,608 per Student </label>
+        </div>
+        <div>
+        	<input id="Field5_2" name="programfee" type="radio" value="For Me + 2" tabindex="7">
+        	<label class="choice" for="Field5_2">For Me + 2 to 5 Friends : 10% OFF : <i class="fa fa-inr" style="font-size:14px; font-weight:100;"></i> 4,365 per Student </label>
+        </div>
+        <div>
+        	<input id="Field5_2" name="programfee" type="radio" value="For Me + 6" tabindex="7">
+                <label class="choice" for="Field5_3">For Me + 6 &amp; More Friends : 15% OFF : <i class="fa fa-inr" style="font-size:14px; font-weight:100;"></i> 4,123 per Student </label>
+        </div>
+      </div>
+        </div>
+    </fieldset>
+                            
+                            <fieldset style="padding-top: 10px">
+    
+        <div class="pull-left" style="text-align: left">
+            <div class="pop col-md-12">
+        <h3 style="margin-top: 8px;color: white;font-size: 18px;font-family: myFirstFont">5. Payment Options</h3>
+            </div>
+      <div class="popf col-md-12">
+      	<input id="radioDefault_5" name="payment_option" type="hidden" value="">
+                                    <div class="row">                                        
+                                        <div class="col-md-6">
+                                        <div>
+      		
+                                            <label class="choice" for="Field6_0"><input name="payment_option" type="radio" value="Bank transfer thru NEFT">  Bank transfer thru NEFT<br><p style="margin-left:14px; font-size:12px; font-style:italic;">(Scan &amp; email transaction slip)</p><br> </label>
+      	</div>
+                                           <div>
+      		
+                                            <label class="choice" for="Field6_1"><input name="payment_option" type="radio" value="Cash Deposit at Bank">  Cash Deposit at Bank<br><p style="margin-left:14px; font-size:12px; font-style:italic;">(Scan &amp; email pay in slip)</p><br> </label>
+      	</div>
+                                           <div>
+      		
+                                            <label class="choice" for="Field6_2"><input name="payment_option" type="radio" value="Cheque/Demand Draft">  Cheque/Demand Draft
+                                                <br><p style="margin-left:14px; font-size:12px; font-style:italic;">(Write your name &amp; mob. no. on <br>reverse side &amp; mail / courier to our office)</p><br></label>
+                                                <br>A/C Name: Intuition Elearning Pvt Ltd<br>Bank: ICICI Bank<br>
+        
+            Branch: Sector V, Salt Lake, Kolkata <br>
+        
+            Acc No: 105605002809<br>
+            IFSC Code: ICIC0001056<br><p>
+      	</div>
+                                        </div>
+                                        <div class="col-md-6">
+                                       <div>
+      		
+                                           <label class="choice" for="Field6_3"><input name="payment_option" type="radio" value="Cash at our office">  Cash at our office<br></label>
+                                           <p style="margin-left:14px;"> Mon – Fri, 10 am to 6 pm<br>
+                                             2nd Floor, DN 25, Sector V,<br>
+                                             Salt Lake, Kolkata 700091<br><br>
+                                           </p>
+                                             <label class="choice" for="Field6_4"><input name="payment_option" type="radio" value="Pay Cash or Cheque/DD">  Pay Cash or Cheque/DD<br></label>
+                                                <p style="margin-left:14px;">at your college<br><br>
+          Contact : Souvik Maity<br>
+          Ph: 033 40086010<br>
+          Mob:9836480252,7278003722<br>
+          Email-id: souvik.maity@knowledgelab.co.in<br><br>
+          <b><i style=" color: #0099CC">Click on Submit if you choose one of the above options.<br></P><p style=" margin-top: 4px;margin-left:14px">Click on PayUmoney to pay online.</i></b></p>
+                                        </div>
+                                </div>
+      </div>
+        </div>
+                        </fieldset>                                
+                            <div class="rsb col-md-12" style="margin-top: 20px">
+                                <b><input id="saveForm" style="padding-left: 100px;padding-right: 100px;padding-bottom: 5px;padding-top: 10px;margin-top: -10px; border-radius: 8px;background-color: #F5F5F5;color: #635B5B;" name="saveForm" type="submit" value="SUBMIT"></b>
+                              <a class="pm-button" href="https://www.payumoney.com/paybypayumoney/#/D9EE372CEA5298F126FEB9C96A0AF372"><img style="margin-top: -8px" src="https://www.payumoney.com//media/images/payby_payumoney/buttons/112.png" /></a>
+    </div>
+                                    <div class="row">
+                                        <div class="penr col-md-12">
+                                                <p>Post enrolment, you will have immediate access to the following to prepare for Summer Training:</p>   
+                                              </div>
+                                </div>
+                                    <div class="oview row">
+                                            <div class="col-md-6" >
+                                         <li>Overview of the training program</li>
+         <li>Assignments</li>
+                                        </div>
+                                        <div class="col-md-6">
+                                         <li>Overview  of Projects</li>
+         <li>Tips on Interview Handling</li>
+                                        </div>
+                                </div>
+                                <div style="height: 40px"></div>
+                                
+</div>        
+                </div>
+            </div>
+        </div>
+                    </div>
+                </form>
+</section>
+     
+    <a href="#" class="scrollup"><i class="fa fa-chevron-circle-up icon_for_scroll_up"></i></a>
+    
+    
+    <div id="fb-root"></div>
+
+    <div class="footerbar" style="">
+    <div class="container clearfix">
+        <div class="row">
+          <div class="call-us">
+              <span class="dis-blk" style=" font-size: 14px">
+                   
+                  
+                    Call us on &nbsp; <i class="fa fa-phone"></i>            </span>
+               
+                
+                <span id="contact-ind" style=" font-size: 14px" data-val="+91-88808-62004">
+			
+                    &nbsp;&nbsp;+91 7278003722&nbsp;&nbsp;
+                    
+                    	
+                    
+                </span>
+            </div>  
+            <div class="fb-like" data-href="https://www.facebook.com/KnowledgeLab-World-865527740189412/" data-layout="standard" data-action="like" data-show-faces="false" data-share="true" style="padding-top: 10px;width: 100px">
+             
+            </div><p class="copyright pull-right" style=" color: white;padding-top: 10px;margin-right: 300px; font-size: 12px"> Copyright <i class="fa fa-copyright" aria-hidden="true"></i> Knowledgelab 2016. All rights reserved.</p>
+        </div>
+    </div>
+</div>
+
+    <!-- jQuery -->
+    <script src="js/jquery-1.12.0.min.js"></script>
+    <script type="text/javascript" src="js/jssor.slider.min.js"></script>
+    
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+                /* When the user clicks on the button, 
+                toggle between hiding and showing the dropdown content */
+                function myFunction() {
+                    document.getElementById("myDropdown").classList.toggle("show");
+                }
+
+                // Close the dropdown if the user clicks outside of it
+                window.onclick = function(event) {
+                  if (!event.target.matches('.fa-bars')) {
+
+                    var dropdowns = document.getElementsByClassName("dropdown-content");
+                    var i;
+                    for (i = 0; i < dropdowns.length; i++) {
+                      var openDropdown = dropdowns[i];
+                      if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                      }
+                    }
+                  }
+                };
+        </script>
+        <script>
+             /* When the user clicks on the button, 
+                toggle between hiding and showing the dropdown content */
+                $(".mybtn").click(function(e)
+                {
+                    e.preventDefault();
+                     //alert("Hello");
+                     $("#myDropdown").toggle();
+                     //document.getElementById("myDropdown").classList.toggle("show");
+                     //$("#myDropdown").addClass("show");
+                });
+                function myFunction() {
+                   
+                    
+                }
+        </script>
+    <!-- Scrolling Nav JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/scrolling-nav.js"></script>
+    <script src="js/animated_menu_and_scrollpy.js"></script>
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-75761760-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>

@@ -1,0 +1,243 @@
+/*!
+ * Start Bootstrap - Scrolling Nav HTML Template (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+body {
+    width: 100%;
+    height: 100%;
+    font-family: Helvetica, Verdana, sans-serif;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+
+@media(min-width:767px) {
+    .navbar {
+       
+        -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        transition: background .5s ease-in-out,padding .5s ease-in-out;
+        font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+        padding-top: 0px;
+       
+    }
+    
+    .top-nav-collapse {
+        padding: 0;
+        background-color: white;
+        opacity: 1;
+        font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+        
+    }
+}
+
+/* Demo Sections - You can use these as guides or delete them - the scroller will work with any sort of height, fixed, undefined, or percentage based.
+The padding is very important to make sure the scrollspy picks up the right area when scrolled to. Adjust the margin and padding of sections and children 
+of those sections to manage the look and feel of the site. */
+
+.intro-section {
+    height: 70%;
+    
+    padding-top: 120px;
+    text-align: center;
+    background-image: url("../images/knowledgelab.png");
+    
+    background-repeat: no-repeat;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.intro1-section {
+    height: 100%;
+     padding-top: 250px;
+    text-align: center;
+   
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+.thank-back
+{
+   background-image: url("../images/mission.gif");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif; 
+}
+.submenu-section {
+    height: 5%;
+    padding-top: 50px;
+    text-align: center;
+    margin-top: 100px;
+    
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    background-image: url("../images/mission.gif");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.menu1-section {
+    height: 80%;
+    padding-top: 100px;
+    text-align: center;
+    background-image: url("../images/mission.gif");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+        font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+.video-background
+{
+   
+    font-family: Montserrat,"Helvetica Light",Helvetica,Arial,sans-serif;
+}
+.submenu1-section {
+    height: 100%;
+    /*margin-top: 10px;*/
+    text-align: center;
+   background-color: #c6dcff;
+   font-family: "Helvetica Light";
+}
+.section-heading {
+    margin-top: 0;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.service-box {
+    
+    max-width: 200px;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+@media(min-width:992px) {
+    .service-box {
+        margin: 20px auto 0;
+        font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    }
+}
+
+.service-box p {
+    margin-bottom: 0;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+
+.menu2-section {
+    height: 80%;
+    padding-top: 25px;
+    text-align: center;
+    background-color: white;
+    
+    
+}
+
+.submenu3-section {
+    
+    padding-top: 50px;
+    text-align: center;
+    margin-top: 100px;
+     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    /*background-image: url("../images/mission.gif");*/
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    
+}
+.menu3-section {
+    height: 100%;
+    padding-top: 0px;
+    text-align: center;
+     /*background-image: url("../images/mission.gif");*/
+    background-repeat: no-repeat;
+    background-color: #c6dcff;
+    background-size: 100% 100%; 
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.menu5-section {
+    height: 100%;
+    padding-top: 60px;
+    text-align: center;
+    background-color: white;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.menu6-section {
+    height: 80%;
+    padding-top: 150px;
+    text-align: center;
+    background-color: white;
+     background-image: url("../images/mission.gif");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;  
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+.submenu6-section {
+  
+    padding-top: 100px;
+    text-align: center;
+    background-color: white;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    
+}
+
+.menu4-section {
+     height: 85%;
+    padding-top: 150px;
+    text-align: center;
+    background-color: white;
+     background-image: url("../images/mission.gif");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;  
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  
+}
+.submenu4-section {
+  
+    padding-top: 60px;
+    text-align: center;
+    background-color: white;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    
+    
+}
+.submenu8-section {
+    
+    padding-top: 50px;
+    text-align: center;
+    background-color: white;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+.menu8-section {
+    height: 75%;
+    padding-top: 150px;
+    text-align: center;
+    background-color: white;
+     background-image: url("../images/work_with_us.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;  
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.menu7-section {
+    height: 60%;
+    padding-top: 15px;
+    text-align: center;
+    background-color: grey;
+    background-image: url("../images/map-image.png");
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+.menu9-section {
+ 
+    padding-top: 50px;
+    text-align: center;
+    background-color: #161616;
+  
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+.form-section {
+    height: 160%;
+    
+   padding-top: 100px;
+  
+}
+

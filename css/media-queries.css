@@ -1,0 +1,632 @@
+/************************************************************************************
+smaller than 980
+*************************************************************************************/
+@media screen and (max-width: 980px) {
+
+	/* pagewrap */
+	#pagewrap {
+		width: 95%;
+	}
+
+	/* content */
+	#content {
+		width: 60%;
+		padding: 3% 4%;
+	}
+
+	/* sidebar */
+	#sidebar {
+		width: 30%;
+	}
+	#sidebar .widget {
+		padding: 8% 7%;
+		margin-bottom: 10px;
+	}
+
+	/* embedded videos */
+	.video embed, 
+	.video object,
+	.video iframe
+         {
+		width: 100%;
+		height: auto;
+		min-height: 300px;
+	}
+       
+
+}
+
+/************************************************************************************
+smaller than 650
+*************************************************************************************/
+@media screen and (max-width: 650px) {
+
+	/* header */
+	#header {
+		height: auto;
+                width: auto;
+	}
+        .intro-section {
+    height: 70%;
+    
+    padding-top: 100px;
+    text-align: center;
+    background-image: url("../images/knowledgelab.png");
+    background-size: 650px 100%;
+    background-repeat: no-repeat;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+.submenu-section {
+    height: 5%;
+    
+    text-align: center;
+    background-color: white;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    
+}
+.menu1-section {
+    height: 80%;
+    padding-top: 70px;
+    text-align: center;
+    background-image: url("../images/mission.gif");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+        font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+.submenu1-section {
+    height: 60%;
+    padding-top: 0px;
+    text-align: center;
+   background-color: white;
+   font-family: "Helvetica Light";
+}
+.menu2-section {
+    height: 70%;
+    padding-top: 75px;
+    text-align: center;
+    background-color: white;
+    
+    
+}
+.submenu3-section {
+    
+    
+    text-align: center;
+    background-color: white;
+    
+    
+}
+.menu3-section {
+    height: 70%;
+    padding-top: -50px;
+    text-align: center;
+     background-image: url("../images/mission.gif");
+    background-repeat: no-repeat;
+    background-size: 100% 100%; 
+  
+}
+.menu5-section {
+    height: 75%;
+    padding-top: 60px;
+    text-align: center;
+    background-color: white;
+    
+}
+.menu6-section {
+    height: 60%;
+    padding-top: 50px;
+    text-align: center;
+    background-color: white;
+     background-image: url("../images/mission.gif");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;  
+   
+}
+.menu4-section {
+    height: 60%;
+    padding-top: 50px;
+    text-align: center;
+    background-color: white;
+     background-image: url("../images/mission.gif");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;  
+   
+}
+.menu8-section {
+    height: 60%;
+    padding-top: 50px;
+    text-align: center;
+    
+     background-image: url("../images/work_with_us.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;  
+    
+}
+.menu7-section {
+    height: 90%;
+    padding-top: 0px;
+    text-align: center;
+    background-color: grey;
+    background-image: url("../images/map-image.png");
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+.menu9-section {
+    height: 60%;
+    padding-top: 50px;
+    text-align: center;
+    background-color: #161616;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+.lapp p
+{
+    font-size: 12px;
+}
+.video p
+{
+    font-size: 10px;
+     padding-left: 400px;
+}
+
+        .border-side {
+    border-bottom: hidden;
+    font-size: 20px; 
+   
+}
+.border-sider {
+    border-bottom: hidden;
+    font-size: 20px;
+    
+}
+section h2.section-heading {
+    font-size: 20px;
+    margin-top: 80px;
+    margin-bottom: 15px;
+}
+.section-heading
+{
+    text-align: left;
+    font-family: Helvetica; 
+    padding-left: 100px;
+}
+.section-heading1
+{
+    text-align: left;
+    font-family: Helvetica; 
+    padding-left: 220px;
+}
+.primary
+{
+    border-top: 1px solid #006cae;
+    width: 400px;
+}
+
+	/* search form */
+	#searchform {
+		position: absolute;
+		top: 5px;
+		right: 0;
+		z-index: 100;
+		height: 40px;
+	}
+	#searchform #s {
+		width: 70px;
+	}
+	#searchform #s:focus {
+		width: 150px;
+	}
+
+	/* main nav */
+	#main-nav {
+		position: static;
+	}
+
+	/* site logo */
+	#site-logo {
+		margin: 15px 100px 5px 0;
+		position: static;
+	}
+
+	/* site description */
+	#site-description {
+		margin: 0 0 15px;
+		position: static;
+	}
+
+	/* content */
+	#content {
+		width: auto;
+		float: none;
+		margin: 20px 0;
+	}
+
+	/* sidebar */
+	#sidebar {
+		width: 100%;
+		margin: 0;
+		float: none;
+	}
+	#sidebar .widget {
+		padding: 3% 4%;
+		margin: 0 0 10px;
+	}
+
+	/* embedded videos */
+	.video embed,
+	.video object,
+	.video iframe {
+		min-height: 50px;
+	}
+#left
+{
+    float: left;
+    width: 100px;
+    height: 400px;   
+}
+#right
+{
+   float: right;
+    width: 400px;
+    height: 300px;    
+}
+.semi-text
+{
+    font-size: 14px;
+}
+.border-side3 {
+   
+    font-size: 16px;
+    padding-top: 25px;
+    padding-right: 70px;
+  font-family: myFirstFont;
+  line-height: 1;    
+}
+.side-topic
+{
+   width: 150px;
+   height: 320px;
+    text-align: justify;    
+    font-size: 10px;    
+}
+.side-topic1
+{
+   width: 150px;
+   height: 250px;
+    text-align: justify;    
+    font-size: 10px;    
+}
+.side-topic2
+{
+   width: 150px;
+   height: 335px;
+    text-align: justify;    
+    font-size: 10px;    
+}
+.title-area2 .title2 {
+	border-bottom: 5px solid gray;
+        border-top: 5px solid gray;
+	color: grey;
+        padding-left: 10px;
+	
+}
+.border-side2 {
+   
+    font-size: 14px;
+    margin: 0 auto 15px;
+    width: 65%;
+    padding-left: 50px;
+    
+}
+.wws-text
+{
+    text-align: left; 
+    font-size: 10px;
+    
+}
+.title-arear .titler {
+	border-bottom: 5px solid grey;
+	color: grey;
+        width: 600px;
+        
+        font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+	
+}
+.thank-back h3
+{
+    font-size: 10px;
+}
+.thank-back p{
+    text-align: justify; 
+    font-size: 14px; 
+    padding-left: 150px;
+}
+.simg
+{
+    
+    padding-left: 0px;
+}
+.smmid
+{
+     float: right; 
+     text-align: left;
+     margin-top: 20px;
+     padding-right: 210px;
+     line-height: 2;
+}
+.smbot {
+    float: left;
+    text-align: left;
+    padding-left: 200px;
+    margin-top: 20px;
+    line-height: 2;
+}
+.smimg {
+    height: 50px;
+    padding-bottom: 0px;
+    margin-top: 50px;
+}
+}
+
+/************************************************************************************
+smaller than 560
+*************************************************************************************/
+@media screen and (max-width: 480px) {
+
+	/* disable webkit text size adjust (for iPhone) */
+	html {
+		-webkit-text-size-adjust: none;
+	}
+
+	/* main nav */
+	#main-nav a {
+		font-size: 90%;
+		padding: 10px 8px;
+	}
+        
+    .intro-section {
+    height: 40%;
+    
+    padding-top: 100px;
+    text-align: center;
+    background-image: url("../images/knowledgelab.png");
+    background-size: 480px 100%;
+    background-repeat: no-repeat;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+}    
+.menu1-section {
+    height: 90%;
+    padding-top: 70px;
+    text-align: center;
+    background-image: url("../images/mission.gif");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+        font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+  .submenu1-section {
+    height: 40%;
+    padding-top: 0px;
+    text-align: center;
+   background-color: white;
+   font-family: "Helvetica Light";
+}      
+    .menu2-section {
+    height: 50%;
+    
+    text-align: center;
+    background-color: white;
+    
+    
+}    
+.submenu3-section {
+    
+    
+    text-align: center;
+    background-color: white;
+     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    
+    
+}
+.menu3-section {
+    height: 50%;
+    
+    text-align: center;
+     background-image: url("../images/mission.gif");
+    background-repeat: no-repeat;
+    background-size: 100% 100%; 
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+.menu5-section {
+    height: 60%;
+    
+    text-align: center;
+    background-color: white;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+.menu6-section {
+    height: 45%;
+    padding-top: 50px;
+    text-align: center;
+    background-color: white;
+     background-image: url("../images/mission.gif");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;  
+   
+}
+.menu4-section {
+    height: 45%;
+    padding-top: 50px;
+    text-align: center;
+    background-color: white;
+     background-image: url("../images/mission.gif");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;  
+   
+}
+.menu8-section {
+    height: 60%;
+    padding-top: 50px;
+    text-align: center;
+    
+     background-image: url("../images/work_with_us.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;  
+    
+}
+.menu7-section {
+    height: 90%;
+    padding-top: 0px;
+    text-align: center;
+    background-color: grey;
+    background-image: url("../images/map-image.png");
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+.menu9-section {
+    height: 80%;
+    padding-top: 50px;
+    text-align: center;
+    background-color: #161616;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+section h2.section-heading {
+    font-size: 14px;
+    margin-top: 80px;
+    margin-bottom: 15px;
+}
+.section-heading
+{
+    text-align: left;
+    font-family: Helvetica; 
+    padding-left: 65px;
+}
+.section-heading1
+{
+    text-align: left;
+    font-family: Helvetica; 
+    padding-left: 140px;
+}
+.primary
+{
+    border-top: 1px solid #006cae;
+    width: 300px;
+}
+.video p
+{
+    font-size: 10px;
+     padding-left: 250px;
+}
+.video img
+{
+    padding-left: 100px;
+    width: 80%;
+}
+.btn-en
+{
+    margin-top: -20px;
+}
+.border-side {
+    border-bottom: hidden;
+    font-size: 14px; 
+   
+}
+.border-sider {
+    border-bottom: hidden;
+    font-size: 14px;
+    
+}
+#left
+{
+    float: left;
+    width: 200px;
+    height: 100px;   
+}
+#right
+{
+   float: right;
+    width: 250px;
+    height: 300px;    
+}
+.semi-text
+{
+    font-size: 8px;
+    width: 200px;
+}
+.border-side3 {
+   
+    font-size: 10px;
+    padding-top: 0px;
+    padding-right: 0px;
+    width: 200px;
+  font-family: myFirstFont;
+  line-height: 1;    
+}
+.side-topic
+{
+   width: 150px;
+   height: 250px;
+    text-align: justify;    
+    font-size: 8px;    
+}
+.side-topic1
+{
+   width: 150px;
+   height: 200px;
+    text-align: justify;    
+    font-size: 8px;    
+}
+.side-topic2
+{
+   width: 150px;
+   height: 260px;
+    text-align: justify;    
+    font-size: 8px;    
+}
+.title-area2 .title2 {
+	border-bottom: 3px solid gray;
+        border-top: 3px solid gray;
+	color: grey;
+        padding-left: 10px;
+	
+}
+.border-side2 {
+   
+    font-size: 10px;
+    margin: 0 auto 15px;
+    width: 70%;
+    
+}
+.wws-text
+{
+    text-align: left; 
+    font-size: 8px;
+}
+.title-arear .titler {
+	border-bottom: 5px solid grey;
+	color: grey;
+        width: 420px;
+       
+        font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+	
+}
+.smap
+{
+    margin-left: 100px;
+}
+.smimg
+{
+    height: 0px; 
+    padding-bottom: 110px; 
+    margin-top: 50px;
+}
+.smmid
+{
+    padding-right: 100px;
+}
+.smtop
+{
+    padding-left: 20px;
+}
+.smbot
+{
+   padding-left: 20px;
+}
+}
+

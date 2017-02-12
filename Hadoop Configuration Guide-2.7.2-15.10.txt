@@ -1,0 +1,395 @@
+**********  Hadoop 2.7.2 Installation *************************************************
+Configuration details writtent by : Amrit Chhetri, Certified BigData Consultant/Instructor
+--------------------------------------------------------------------------------------------------------------------------------------------------
+
+Hadoop 2.7.2 can be installed on Ubuntu 15.10 using the steps below- Single Node Mode:
+--------------------------------------------------------------------------------------
+1.  Install Ubuntu 15.10 either on Dual boot or as Virtual Machine using WMWare Player/Workstation 12.x or higher
+2.  Install Java
+3.  Add a Hadoop user
+4.  Install SSH and configure  SSH certificates
+5.  Check whether SSH works or not
+6.  Install Hadoop 2.7.2
+7.  Modify Hadoop config files
+8.  Format Hadoop Filestsystem(HDFS)
+9.  Start Hadoop
+10. Check Hadoop using Web Interface
+12. Run Word Count's jar file
+11. Stop Hadoop
+--------------------------------------------------------------------------------------------------
+
+1. Install Ubuntu 15.10 :
+------------------------
+	Install Ubuntu 15.10 either on Dual boot or as Virtual Machine using VMPlayer 12.x     
+
+2. Install Java:
+----------------
+   	$ sudo apt-get update
+   	$ sudo apt-get install default-jdk
+	$ java -version
+	$ update-alternatives --config java
+	
+	Note: 
+	1. Use $ locate java and $whereis java, is used to know the installation folder
+
+3. Add a Hadoop user:
+--------------------
+ 	$sudo addgroup hadoop
+ 	$sudo adduser --ingroup hadoop hduser
+	$sudo adduser hduser sudo
+
+4. Install SSH and configure/writing SSH certificates:
+	-------------------------------------------------
+	$ sudo apt-get install ssh
+	$ su hduser
+	$ ssh-keygen -t rsa -P "" -f ~/.ssh/id_rsa
+	$ cat $HOME/.ssh/id_rsa.pub >> $HOME/.ssh/authorized_keys
+	or cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys
+	
+5. Check whether SSH works or not:
+	------------------------------
+	$ssh localhost
+
+6. Install Hadoop 2.7.2:
+	-------------------
+	$ wget http://mirrors.sonic.net/apache/hadoop/common/hadoop-2.7.2/hadoop-2.7.2.tar.gz
+	  ( or use already downloaded Hadoop 2.7.2)
+	$ tar xvzf hadoop-2.7.2.tar.gz
+	$ cd hadoop-2.7.2
+	$ sudo mkdir /usr/local/hadoop
+	$ sudo mv *  /usr/local/hadoop
+	$ sudo chown -R hduser:hadoop /usr/local/hadoop
+
+7. Modify Hadoop configiguration files :
+	-----------------------------------
+	Changes are added into 5 different files (hadoop-env.sh,hdfs-site.xml,core-site.xml,mapred-site.xml.template) :
+	
+	   ~/.bashrc
+	   /usr/local/hadoop/etc/hadoop/hadoop-env.sh
+	   /usr/local/hadoop/etc/hadoop/hdfs-site.xml
+	   /usr/local/hadoop/etc/hadoop/core-site.xml
+  	   /usr/local/hadoop/etc/hadoop/mapred-site.xml.template
+
+	~/.bashrc , sudo vi/gedit ->Action->append entries below at the end of this file:
+	------------------------------------------------------------------
+	export JAVA_HOME=/usr/lib/jvm/java-7-openjdk-amd64
+	export HADOOP_INSTALL=/usr/local/hadoop
+	export HADOOP_HOME=/usr/local/hadoop
+	export PATH=$PATH:$HADOOP_INSTALL/bin
+	export PATH=$PATH:$HADOOP_INSTALL/sbin
+	export HADOOP_MAPRED_HOME=$HADOOP_INSTALL
+	export HADOOP_COMMON_HOME=$HADOOP_INSTALL
+	export HADOOP_HDFS_HOME=$HADOOP_INSTALL
+	export YARN_HOME=$HADOOP_INSTALL
+	export HADOOP_COMMON_LIB_NATIVE_DIR=$HADOOP_INSTALL/lib/native
+	export HADOOP_OPTS="-Djava.library.path=$HADOOP_INSTALL/lib"
+    
+	$ source ~/.bashrc
+	
+
+   /usr/local/hadoop/etc/hadoop/hadoop-env.sh, Action->set JAVA_HOME
+	-----------------------------------------------------------------
+   export JAVA_HOME=/usr/lib/jvm/java-7-openjdk-amd64
+
+	/usr/local/hadoop/etc/hadoop/hdfs-site.xml,Actions-> Add namenode, datanode in <configuration> tag:
+	---------------------------------------------------------------------------------------------------
+	$ sudo mkdir -p /usr/local/hadoop_store/hdfs/namenode
+	$ sudo mkdir -p /usr/local/hadoop_store/hdfs/datanode
+	$ sudo chown -R hduser:hadoop /usr/local/hadoop_store
+	<configuration>
+	 <property>
+	  <name>dfs.replication</name>
+	  <value>1</value>
+	  <description>Default block replication.
+	  The actual number of replications can be specified when the file is created.
+	  The default is used if replication is not specified in create time.
+	  </description>
+	 </property>
+	 <property>
+	   <name>dfs.namenode.name.dir</name>
+	   <value>file:/usr/local/hadoop_store/hdfs/namenode</value>
+	 </property>
+	 <property>
+	   <name>dfs.datanode.data.dir</name>
+	   <value>file:/usr/local/hadoop_store/hdfs/datanode</value>
+	 </property>
+	</configuration>
+
+	/usr/local/hadoop/etc/hadoop/core-site.xml, Action-> Append temporay folder inside <configuratiom>:
+	---------------------------------------------------------------------------------------------------
+		$ sudo mkdir -p /app/hadoop/tmp
+		$ sudo chown hduser:hadoop /app/hadoop/tmp
+			<configuration>
+			 <property>
+			  <name>hadoop.tmp.dir</name>
+			  <value>/app/hadoop/tmp</value>
+			  <description>A base for other temporary directories.</description>
+			 </property>
+			
+			 <property>
+			  <name>fs.default.name</name>
+			  <value>hdfs://localhost:54310</value>
+			  <description>The name of the default file system. </description>
+			 </property>
+		</configuration>
+
+	/usr/local/hadoop/etc/hadoop/mapred-site.xml.template,Action-< mapred-site.xml from the template:
+	------------------------------------------------------
+		$ cp /usr/local/hadoop/etc/hadoop/mapred-site.xml.template  /usr/local/hadoop/etc/hadoop/mapred-site.xml
+		<configuration>
+		<property>
+		  <name>mapred.job.tracker</name>
+		  <value>localhost:54311</value>
+		  <description>The host and port that the MapReduce job tracker runs
+		  at.  If "local", then jobs are run in-process as a single map
+		  and reduce task.
+		  </description>
+		</property>
+		</configuration>
+	
+	NameNode Format:
+	---------------
+	/usr/local/hadoop/bin/hadoop namenode -format
+	
+8.  Start Hadoop, $ sbin/start-all.sh
+9.  Check Hadoop using Web Interface
+	http://ip:50070/ - NameNode daemon
+	http://ip:50090/ - Secondary daemon
+	http://ip:50070/ - DataNode 
+	hduser@laptop:~$ netstat -plten | grep java ( Checking)
+	
+-------------------------------------------  Hive Configuration by Amrit Chhetri -------------------------------
+
+Target Platforms: Hadoop 2.7.2
+
+1. MySQL Instalation:
+---------------------
+	1. Install mysql: sudo apt-get install mysql-server
+		  (Give assword to root : amr123)
+       $sudo at-get install mysql-client
+	2. Create database: $ mysql -u root -p
+		      Enter password:amr123
+		mysql>CREATE DATABASE metastore_db;
+	3. Create MySQL User for Hive:
+		mysql> CREATE USER 'hduser'@'%' IDENTIFIED BY 'hduser';
+		mysql> GRANT all on *.* to 'hduser'@localhost identified by 'hduser';
+		mysql> flush privileges;		
+
+2. Install Hive:
+---------------
+	Use downloaded apache-hive-1.2.0-bin.tar.gz 
+	$ tar xvzf apache-hive-1.2.0-bin.tar.gz
+	$ cd apache-hive-1.2.0
+	$ sudo mkdir /usr/local/hive
+	$ sudo mv *  /usr/local/hive
+	$ sudo chown -R hduser:hadoop /usr/local/hive
+	
+3 Modify Hive Configuration Files:
+---------------------------------
+	The modifications are added to the following files
+		~/bashrc
+		/usr/local/hive/conf/hive-env.sh
+		/usr/local/hive/conf/hive-site.xml
+				
+	In ~/bashrc add the following entries:
+	-------------------------------------
+	   	export HIVE_HOME=/usr/local/hive
+		export PATH=$PATH:$HIVE_HOME/bin
+		export CLASSPATH=$CLASSPATH:/usr/local/hadoop/lib/*:.
+		export CLASSPATH=$CLASSPATH:/usr/local/hive/lib/*:.
+		eport HADOOP_USER_CLASSPATH_FIRST=true
+
+	/usr/local/hive/conf/hive-env.sh.template,Action-> create hive-env.sh from the template:
+	----------------------------------------------------------------------------
+		$ cp /usr/local/hive/conf/hive-env.sh.template  /usr/local/hive/conf/hive-env.sh
+		$ sudo gedit/vi usr/local/hive/conf/hive-env.sh
+		Add export HADOOP_HOME=/usr/local/hadoop	
+	
+	/usr/local/hive/conf/hive-site.xml,make entries inside <configuration> tag: 
+	----------------------------------------------------------------------------
+	/usr/local/hive/conf/sudo hive-template.xml hive-site.xml
+	   $ sudo gedit /usr/local/hive/conf/hive-site.xml
+	     <configuration>
+            <property>
+            <name>javax.jdo.option.ConnectionURL</name>
+            <value>jdbc:mysql://localhost/metastore_db?createDatabaseIfNotExist=true</value>
+            <description>Metadata</description>
+            </property>
+            <property>
+            <name>javax.jdo.option.ConnectionDriverName</name>
+            <value>com.mysql.jdbc.Driver</value>
+            <description>Driver</description>
+            </property>
+            <property>
+            <name>javax.jdo.option.ConnectionUserName</name>
+            <value>hduser</value>
+            <description>User</description>
+            </property>
+         <property>
+            <name>javax.jdo.option.ConnectionPassword</name>
+          <value>hduser</value>
+            <description>Password </description>
+            </property>
+          </configuration>
+	JDBC Driver configuration:	  
+		Copy mysql-jdbc to $HIVE_HOME/lib folder
+	
+	
+	Removing Safe mode:
+	------------------
+	$HADOOP_HOME/bin/hadoop dfsadmin -safemode leave ****
+
+	Create HDFS Directories and HDFS rights:
+	----------------------------------------
+	$HADOOP_HOME/bin/hadoop dfs -mkdir /tmp 
+	$HADOOP_HOME/bin/hadoop dfs -mkdir /user
+	$HADOOP_HOME/bin/hadoop dfs -mkdir /user/hive
+	$HADOOP_HOME/bin/hadoop dfs -mkdir /user/hive/warehouse
+	$HADOOP_HOME/bin/hadoop dfs -chmod g+w /tmp 
+	$HADOOP_HOME/bin/hadoop dfs -chmod g+w /user/hive/warehouse
+	
+	(Alternatively, $HADOOP_HOME/bin/hdfs dfs -mkdir /user/cloudera/input)
+	
+4. Start Hadoop and Hive:
+-------------------------
+	$HADOOP_HOME/bin/start-all.sh ( to start Hadoop)
+	$HIVE_HOME/bin/hive
+	Resolving error: Inside hive-site.xml change {java.io.user} with /tmp/hduser
+	starts hive>
+	Type hive> show databases; to check the installation
+	
+	
+	Starting Hive-Thrift Server( JJBC Services):
+	$sudo service hive-server2 star
+
+-----------------------------  HBASE installation ------------------------------------------
+HBase : 1.1.2
+
+1. Install HBase
+---------------
+	$ tar xvzf apache-hbase 1.1.2.tar.gz
+	$ cd apache-hbase 1.1.2
+	$ sudo mkdir /usr/local/hbase
+	$ sudo mv *  /usr/local/hbase
+	$ sudo chown -R hduser:hadoop /usr/local/hbase
+	
+2 Modify Hive Configuration Files:
+---------------------------------
+  ~/.bashrc
+  usr/local/hbase/conf/hbase-env.sh
+  usr/local/hbase/conf/hbase-site.xm
+  /etc/hosts
+
+~/.bashrc:
+----------
+export HBASE_HOME=/usr/local/hbase
+export PATH= $PATH:$HBASE_HOME/bin
+
+usr/local/hbase/conf/hbase-env.sh:
+---------------------------------
+$ sudo gedit  usr/local/hbase/conf/hbase-env.sh
+ Enter, export JAVA_HOME=/usr/local/java
+
+usr/local/hbase/conf/hbase-site.xml:
+-----------------------------------
+$ gedit  usr/local/hbase/conf/hbase-site.xm
+	<property>
+	<name></name>
+	<value>file:///home/hduser/HBASE/hbase</value>
+	</property>hbase.rootdir
+	<property>
+	<name>hbase.zookeeper.property.dataDir</name>
+	<value>/home/hduser/HBASE/zookeeper</value>
+	</property>
+
+/etc/hosts:
+-----------
+$ sudo gedit /etc/hosts
+	127.0.0.1 localhost
+	127.0.0.1 bigadatsys1
+
+Start HBase:
+-------------------
+/usr/local/hbase/bin/ $start-hbase.sh
+/usr/local/hbase/bin$ jps
+
+Stat HBase Shell
+----------------
+hbase/bin/hbase shell
+hbase> version
+
+
+-------------------------------------------- Pig Installation -------------------------------------------------
+
+1. Install Pig
+---------------
+$ tar xvzf apache-pig 0.4.tar.gz
+$ cd apache-pig
+$ sudo mkdir /usr/local/pig
+$ sudo mv *  /usr/local/pig
+$ sudo chown -R hduser:hadoop /usr/local/pig
+	
+2 Modify Pig Configuration Files:
+---------------------------------
+~/.bashrc:
+---------------
+export PIG_HOME =/usr/local/pig
+export PATH=$PATH:/usr/local/pig/bin
+export PIG_CLASSPATH=$HADOOP_HOME/conf
+
+Start pig:
+---------
+/usr/local/pig/bin $pig -x local
+
+
+--------------------------------------- Sqoop Installation ---------------------------------------------------
+
+1. Install Sqoop
+	1.Get sqoop-1.4.4.bin_hadoop-1.0.0.tar.gz or use existing
+	$ tar xvzf sqoop-1.4.4.bin_hadoop-1.0.0.tar.gz
+	$ cd sqoop-1.4.4.bin_hadoop-1.0.0
+	$ sudo mkdir /usr/local/sqoop
+	$ sudo mv *  /usr/local/sqoop
+	$ sudo chown -R hduser:hadoop /usr/local/sqoop	
+
+2. Modify files :
+	~/.bashrc	
+	
+	~/.bashrc:
+	---------
+	$ sudo gedit ~/.bashrc
+    Add,
+    export SQOOP_HOME=usr/local/sqoop
+    export PATH=$PATH:$SQOOP_HOME/bin
+	
+3. Running Sqoop:
+-----------------
+	$sqoop version
+
+---------------------------------------Spark Installation  ---------------------------------------------------
+1. Spark Installation:
+---------------------
+$ Get Spark from official site or use the downlaoded one
+	$ tar xvzf spark-1.6.0-bin-without-hadoop.tgz
+	$ cd spark-1.6.0-bin-without-hadoop
+	$ sudo mkdir /usr/local/spark
+	$ sudo mv *  /usr/local/spark
+	$ sudo chown -R hduser:hadoop /usr/local/spark
+
+2. Modify Hadoop configiguration files :
+	-----------------------------------
+	Changes are added into 5 different files (hadoop-env.sh,hdfs-site.xml,core-site.xml,mapred-site.xml.template) :
+	~/.bashrc	
+
+	~/.bashrc , sudo vi/gedit ->Action->append entries below at the end of this file:
+	------------------------------------------------------------------
+	export SPARK_HOME=/usr/local/spark
+	export PATH=$SPARK_HOME/bin:$PATH
+	$source ~/.bashrc
+		
+3. Running Spark:
+-----------------
+	cd $SPARK_HOME
+	1. /bin/spark-shell -> scala>
+	2. /bin/pyspark  --> spark>>>
+

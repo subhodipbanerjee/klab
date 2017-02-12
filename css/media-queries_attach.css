@@ -1,0 +1,975 @@
+@charset "utf-8";
+/* CSS Document */
+
+@media only screen and (max-width:320px) and (min-width:240px) {
+
+}
+
+
+@media only screen and (max-width:480px) and (min-width:320px) {
+
+
+.howit-works-video {
+    background: rgba(0, 0, 0, 0) url("../images/macbook-pro.png") no-repeat scroll center 100% / 100% auto;
+     margin-right: -20px; 
+    max-width: 700px;
+    padding: 30px 60px 40px 60px;
+    position: relative;
+    float: left;
+    z-index: 10;
+}
+
+	/* disable webkit text size adjust (for iPhone) */
+	html {
+		-webkit-text-size-adjust: none;
+	}
+
+	/* main nav */
+	#main-nav a {
+		font-size: 90%;
+		padding: 10px 8px;
+	}
+        
+    .intro-section {
+    height: 60%;
+    
+    padding-top: 100px;
+    text-align: center;
+    background-image: url("../images/knowledgelab.png");
+    background-size: 420px 100%;
+    background-repeat: no-repeat;
+    
+}
+
+
+  .submenu1-section {
+     margin-bottom:50px;
+
+}    
+.submenu-section {
+    height: 15%;
+    padding-top: 40px;
+    text-align: center;
+    background-color: white;
+}
+.menu1-section {
+    height: 100%;
+    padding-top: 50px;
+    text-align: center;
+    
+}
+.menu6-section {
+    height: 70%;
+    padding-top: 50px;
+    text-align: center;
+    background-color: white;
+     background-image: url("../images/mission.gif");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;  
+   
+}
+.menu4-section {
+    height: 70%;
+    padding-top: 50px;
+    text-align: center;
+    background-color: white;
+     background-image: url("../images/mission.gif");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;  
+   
+}
+.menu8-section {
+    height: 65%;
+    padding-top: 50px;
+    text-align: center;
+    
+     background-image: url("../images/work_with_us.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;  
+    
+}
+.video-top
+{
+   font-size: 14px; 
+   margin-right: 0px;
+}
+.footerbar .call-us {
+    font-size: 14px;
+}
+.navbar-header
+{
+    background-image: url("../images/facebook.png");
+    background-repeat: no-repeat;
+    background-position: 80% 20%;
+    background-size: 9%;
+}
+.navbar-nav h4,h5
+        {
+            font-size: 12px;
+        }
+        .section-heading
+{
+    text-align: left;
+     
+    padding-left: 200px;
+}
+.btn-xl{
+	margin-bottom:20px;
+}
+.btn-sm
+{
+   
+    margin-top: -10px;
+}
+.btn-en {
+    margin-top: -10px;
+}
+.menu7-section {
+
+	margin-top:20px;
+}*
+section h2.section-heading {
+    font-size: 14px;
+    margin-top: 80px;
+    margin-bottom: 15px;
+}
+.section-heading
+{
+    text-align: left;
+    font-family: Helvetica; 
+    padding-left: 20px;
+}
+.section-heading1
+{
+    padding-left: 0px;
+}
+
+.video img
+{
+    padding-left: 20px;
+    width: 90%;
+	margin-top: 20px;
+}
+.border-side {
+    border-bottom: 1px solid #006cae;
+ 
+    line-height: 1;
+    width: 70%;
+    font-size: 14px; 
+   }
+   .border-side > span {
+    
+    
+    top: 6px;
+    padding: 0 23px;
+    
+}
+.border-sider {
+    
+    font-size: 14px;
+    border-bottom: 1px solid #006cae;    
+   
+    width: 72%;
+}
+.border-sider > span {
+    
+    top: 6px;
+    padding: 0 23px;
+    font-family: myFirstFont;
+}
+#right
+{
+   margin-top:100px ;
+   margin-left: 30%;
+    float: left;
+    width: 200px;
+    height: 100px;   
+}
+#left
+{
+    margin-left: 30%; 
+    margin-top: -30px;
+   float: left;
+    width: 250px;
+    height: 50px;    
+}
+.menu4-section #right
+{
+    margin-top: 125px ;
+}
+
+.menu8-section #left
+{
+    margin-top: -30px ;
+    margin-left: 20%;
+}
+.menu8-section #right
+{
+    margin-top: 50px ;
+   margin-left: 25%;
+}
+
+}
+
+
+@media only screen and (max-width:640px) and (min-width:480px) {
+	/* header */
+	#header {
+		height: auto;
+                width: auto;
+	}
+        .intro-section {
+    height: 50%;
+    
+    padding-top: 100px;
+    text-align: center;
+    background-image: url("../images/knowledgelab.png");
+    background-size: 640px 100%;
+    background-repeat: no-repeat;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+.submenu-section {
+    height: 15%;
+    
+    text-align: center;
+    background-color: white;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    
+}
+.menu1-section {
+    height: 90%;
+    padding-top: 70px;
+    text-align: center;
+    background-image: url("../images/mission.gif");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+        font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+.submenu1-section {
+    height: 40%;
+    padding-top: 0px;
+    text-align: center;
+   background-color: white;
+   font-family: "Helvetica Light";
+}
+.menu2-section {
+    height: 50%;
+    padding-top: 75px;
+    text-align: center;
+    background-color: white;
+    
+    
+}
+.submenu3-section {
+    
+    
+    text-align: center;
+    background-color: white;
+    
+    
+}
+.menu3-section {
+    height: 50%;
+    padding-top: -50px;
+    text-align: center;
+     background-image: url("../images/mission.gif");
+    background-repeat: no-repeat;
+    background-size: 100% 100%; 
+  
+}
+.menu5-section {
+    height: 50%;
+    padding-top: 60px;
+    text-align: center;
+    background-color: white;
+    
+}
+.menu6-section {
+    height: 60%;
+    padding-top: 50px;
+    text-align: center;
+    background-color: white;
+     background-image: url("../images/mission.gif");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;  
+   
+}
+.menu4-section {
+    height: 60%;
+    padding-top: 50px;
+    text-align: center;
+    background-color: white;
+     background-image: url("../images/mission.gif");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;  
+   
+}
+.menu8-section {
+    height: 60%;
+    padding-top: 50px;
+    text-align: center;
+    
+     background-image: url("../images/work_with_us.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;  
+    
+}
+.menu7-section {
+    height: 70%;
+    padding-top: 0px;
+    text-align: center;
+    background-color: grey;
+    background-image: url("../images/map-image.png");
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+.navbar-header
+{
+    background-image: url("../images/facebook.png");
+    background-repeat: no-repeat;
+    background-position: 85% 20%;
+    background-size: 7%;
+}
+.navbar-nav h4,h5
+        {
+            font-size: 12px;
+        }
+.lapp p
+{
+    font-size: 12px;
+}
+.video p
+{
+    font-size: 10px;
+     padding-left: 400px;
+}
+.video img
+{
+    width: 60%;
+    padding-top: 0px;
+    margin-right: 100px;
+}
+.howit-works-video {
+    background: rgba(0, 0, 0, 0) url("../images/macbook-pro.png") no-repeat scroll center 100% / 100% auto;
+    margin-left: 60px;
+    max-width: 700px;
+    padding: 70px 70px 60px 70px;
+    position: relative;
+    float: left;
+    z-index: 10;
+}
+
+       .border-side {
+    border-bottom: 1px solid #006cae;
+ 
+    line-height: 1;
+    width: 70%;
+    font-size: 14px; 
+   }
+   .border-side > span {
+    
+    
+    top: 6px;
+    padding: 0 23px;
+    
+}
+.border-sider {
+    
+    font-size: 14px;
+    border-bottom: 1px solid #006cae;    
+   
+    width: 72%;
+}
+.border-sider > span {
+    
+    top: 6px;
+    padding: 0 23px;
+    font-family: myFirstFont;
+}
+section h2.section-heading {
+    font-size: 20px;
+    margin-top: 80px;
+    margin-bottom: 15px;
+}
+.section-heading
+{
+    text-align: left;
+    font-family: Helvetica; 
+    padding-left: 100px;
+}
+.section-heading1
+{
+    text-align: left;
+    font-family: Helvetica; 
+    padding-left: 220px;
+}
+.primary
+{
+    border-top: 1px solid #006cae;
+    width: 400px;
+}
+
+	/* search form */
+	#searchform {
+		position: absolute;
+		top: 5px;
+		right: 0;
+		z-index: 100;
+		height: 40px;
+	}
+	#searchform #s {
+		width: 70px;
+	}
+	#searchform #s:focus {
+		width: 150px;
+	}
+
+	/* main nav */
+	#main-nav {
+		position: static;
+	}
+
+	/* site logo */
+	#site-logo {
+		margin: 15px 100px 5px 0;
+		position: static;
+	}
+
+	/* site description */
+	#site-description {
+		margin: 0 0 15px;
+		position: static;
+	}
+
+	/* content */
+	#content {
+		width: auto;
+		float: none;
+		margin: 20px 0;
+	}
+
+	/* sidebar */
+	#sidebar {
+		width: 100%;
+		margin: 0;
+		float: none;
+	}
+	#sidebar .widget {
+		padding: 3% 4%;
+		margin: 0 0 10px;
+	}
+
+	/* embedded videos */
+	.video embed,
+	.video object,
+	.video iframe {
+		min-height: 250px;
+	}
+
+.semi-text
+{
+    font-size: 14px;
+}
+.border-side3 {
+   
+    font-size: 16px;
+    padding-top: 25px;
+    padding-right: 70px;
+  font-family: myFirstFont;
+  line-height: 1;    
+}
+.side-topic
+{
+   width: 150px;
+   height: 360px;
+    text-align: justify;    
+    font-size: 10px;    
+}
+.side-topic1
+{
+   width: 150px;
+   height: 250px;
+    text-align: justify;    
+    font-size: 10px;    
+}
+.side-topic2
+{
+   width: 150px;
+   height: 370px;
+    text-align: justify;    
+    font-size: 10px;    
+}
+.title-area2 .title2 {
+	border-bottom: 5px solid gray;
+        border-top: 5px solid gray;
+	color: grey;
+        padding-left: 10px;
+	
+}
+.border-side2 {
+   
+    font-size: 14px;
+    margin: 0 auto 15px;
+    width: 65%;
+    padding-left: 50px;
+    
+}
+.wws-text
+{
+    text-align: left; 
+    font-size: 10px;
+    
+}
+.title-arear .titler {
+	border-bottom: 5px solid grey;
+	color: grey;
+        width: 600px;
+        
+        font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+	
+}
+.thank-back h3
+{
+    font-size: 10px;
+}
+.thank-back p{
+    text-align: justify; 
+    font-size: 14px; 
+    padding-left: 150px;
+}
+
+#right
+{
+    float: right;
+    width: 200px;
+    height: 100px;   
+}
+#left
+{
+   float: left;
+   margin-left: 50px;
+    width: 250px;
+    height: 300px;    
+}
+}
+
+@media only screen and (max-width:768px) and (min-width:640px) 
+{
+    .intro-section {
+
+	margin-top:100px;
+	background-size: 900px 100%;
+	height:30%
+}    
+.submenu-section {
+	margin-top:-230px;
+	padding-top: 20px;
+
+}
+
+.menu3-section {
+    height: 56%;
+}
+
+
+  .submenu1-section {
+     margin-bottom:50px;
+
+}      
+.footerbar .call-us {
+    font-size: 14px;
+}
+
+.btn-xl{
+	margin-bottom:40px;
+}
+.menu7-section {
+
+	margin-top:20px;
+}
+section h2.section-heading {
+    font-size: 14px;
+/*    margin-top: 80px;*/
+    margin-bottom: 15px;
+}
+.section-heading
+{
+    text-align: left;
+    font-family: Helvetica; 
+    padding-left: 0px;
+	margin-top:-400px;
+
+}
+section h2.section-heading {
+    font-size: 36px;
+}	
+.section-heading1
+{
+    padding-left: 0px;
+}
+
+.video img
+{
+    padding-left: 20px;
+    width: 90%;
+	margin-top:-20px;
+}
+	
+	
+.border-side > span {
+	padding:0 5px;
+}
+.menu1-section {
+    height: 67%;
+}	
+.menu2-section{
+    height: 60%;
+}	
+.menu5-section {
+    height: 70%;
+    padding-top: 0px;
+}
+.menu6-section {
+    height: 85%;
+    padding-top: 0px;
+}	
+.menu7-section {
+    height: 70%;
+    padding-top: 0px;
+}
+#left
+{
+   margin-top: 50px ;
+   margin-left: 180px;
+    float: left;
+    width: 200px;
+    height: 100px;   
+}
+#right
+{
+    float: none;
+}
+.menu4-section 
+{
+   padding-top: 0px;
+   height: 100%;
+}
+.menu4-section #right
+{
+   padding-top: -100px;
+}.menu4-section #left
+{
+   padding-top: 50px;
+   margin-left: 180px;
+}
+.menu8-section #right
+{
+    margin-top: -50px ;
+    margin-left: 180px;
+}
+.menu8-section #left
+{
+    margin-top: 0px ;
+   margin-left: 25%;
+}
+.menu8-section
+{
+    padding-top: 0px;
+}
+.howit-works-video {
+    background: rgba(0, 0, 0, 0) url("../images/macbook-pro.png") no-repeat scroll center 100% / 100% auto;
+    /* margin-right: 0px; */
+    max-width: 700px;
+    padding: 30px 60px 30px 60px;
+    position: relative;
+    float: left;
+    z-index: 10;
+}
+}
+
+@media only screen and (max-width:979px) and (min-width:768px) 
+{
+    .intro-section {
+        
+	margin-top:100px;
+	background-size: 979px 100%;
+	height:70%
+}    
+.submenu-section {
+	margin-top:-230px;
+	padding-top: 20px;
+
+}
+
+.menu3-section {
+    height: 60%;
+    
+}
+.submenu3-section {
+    padding-top: 150px;
+    
+}
+
+  .submenu1-section {
+     margin-bottom:50px;
+     height: 85%;
+} 
+.submenu-section {
+     
+     height: 15%;
+}    
+.footerbar .call-us {
+    font-size: 14px;
+}
+
+.btn-xl{
+	margin-bottom:40px;
+}
+.menu7-section {
+
+	margin-top:20px;
+}
+.menu6-section {
+
+	padding-top: 0px;
+        height: 90%;
+}
+section h2.section-heading {
+    font-size: 14px;
+/*    margin-top: 80px;*/
+    margin-bottom: 15px;
+}
+.section-heading
+{
+    text-align: left;
+    font-family: Helvetica; 
+    padding-left: 0px;
+	margin-top:-400px;
+
+}
+section h2.section-heading {
+    font-size: 36px;
+}	
+.section-heading1
+{
+    padding-left: 0px;
+}
+
+.video img
+{
+    padding-left: 20px;
+    width: 90%;
+	margin-top:-20px;
+}
+	
+	
+.border-side > span {
+	padding:0 5px;
+}
+.menu1-section {
+	height: 70%;
+	padding-top: 36px;
+}	
+.menu2-section{
+    height: 60%;
+}	
+.menu5-section {
+    height: 70%;
+}	
+.menu7-section {
+    height: 70%;
+}
+#left
+{
+   margin-top: 50px ;
+   margin-left: 180px;
+    float: left;
+    width: 200px;
+    height: 100px;   
+}
+.menu4-section 
+{
+   padding-top: 0px;
+   height: 100%;
+}
+.menu4-section #right
+{
+   padding-top: -100px;
+}.menu4-section #left
+{
+   padding-top: 50px;
+   margin-left: 180px;
+}
+.menu8-section #right
+{
+    margin-top: -50px ;
+    margin-left: 180px;
+}
+.menu8-section #left
+{
+    margin-top: 0px ;
+   margin-left: 25%;
+}
+.menu8-section
+{
+    padding-top: 0px;
+}
+}
+
+
+@media only screen and (max-width:1024px) and (min-width:979px) 
+{
+    .intro-section {
+        
+	margin-top:100px;
+	background-size: 1024px 100%;
+	height:70%
+}    
+.submenu-section {
+	margin-top:-230px;
+	padding-top: 20px;
+
+}
+
+.menu3-section {
+    height: 65%;
+    
+}
+.submenu3-section {
+    padding-top: 150px;
+    
+}
+
+  .submenu1-section {
+     margin-bottom:50px;
+     height: 85%;
+} 
+.submenu-section {
+     
+     height: 15%;
+}    
+.footerbar .call-us {
+    font-size: 14px;
+}
+
+.btn-xl{
+	margin-bottom:40px;
+}
+.menu7-section {
+
+	
+}
+section h2.section-heading {
+    font-size: 14px;
+/*    margin-top: 80px;*/
+    margin-bottom: 15px;
+}
+.section-heading
+{
+    text-align: left;
+    font-family: Helvetica; 
+    padding-left: 100px;
+	margin-top:-400px;
+
+}
+section h2.section-heading {
+    font-size: 36px;
+}	
+.section-heading1
+{
+    padding-left: 0px;
+}
+
+.video img
+{
+    padding-left: 20px;
+    width: 90%;
+	margin-top:-20px;
+}
+	
+	
+.border-side > span {
+	padding:0 5px;
+}
+.menu1-section {
+	height: 70%;
+	padding-top: 36px;
+}	
+.menu2-section{
+    height: 60%;
+}	
+.menu5-section {
+    height: 72%;
+}	
+.menu7-section {
+    height: 70%;
+}
+#left
+{
+   margin-top: 50px ;
+   margin-left: 350px;
+    float: left;
+    width: 200px;
+    height: 100px;   
+}
+.menu4-section 
+{
+   padding-top: 0px;
+   height: 100%;
+}
+.menu4-section #right
+{
+   padding-top: -100px;
+}.menu4-section #left
+{
+   padding-top: 50px;
+   margin-left: 350px;
+}
+.menu8-section #right
+{
+    margin-top: -50px ;
+    margin-left: 180px;
+}
+.menu8-section #left
+{
+    margin-top: 0px ;
+   margin-left: 350px;
+}
+.menu8-section
+{
+    padding-top: 0px;
+}
+.menu6-section
+{
+    padding-top: 0px;
+    height: 90%;
+    
+}
+}
+
+
+@media only screen and (max-width:1200px) and (min-width:1024px) 
+{
+    
+}
+@media only screen and (max-width: 400px) {
+
+}
+
+@media screen and (max-width: 800px) {
+
+}
+
+@media screen and (min-width: 40em) {
+}
+
+@media only screen and (max-width: 640px) and (min-width: 480px){
+.video embed, .video object, .video iframe {
+    min-height: 50px;
+}}
+
+@media screen and (max-width: 980px){
+.video embed, .video object, .video iframe {
+    width: 90%;
+    height: auto;
+    
+}}
