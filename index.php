@@ -953,35 +953,27 @@ Analyze the feasibility<br> of the designs<br><br>Showcase the <br>designs virtu
         </div>
     </section>
 
-    
-     <a href="#" class="scrollup"><i class="fa fa-chevron-circle-up icon_for_scroll_up"></i></a>
+    <?php include('includes/footer.php'); ?>
+<!--     <a href="#" class="scrollup"><i class="fa fa-chevron-circle-up icon_for_scroll_up"></i></a>
     <div id="fb-root"></div>
 
     <div class="footerbar" style="">
-    <div class="container clearfix">
+      <div class="container clearfix">
         <div class="row">
           <div class="call-us">
-              <span class="dis-blk" style=" font-size: 14px">
-                   
-                  
-                    Call us on &nbsp; <i class="fa fa-phone"></i>            </span>
-               
-                
-                <span id="contact-ind" style=" font-size: 14px" data-val="+91-88808-62004">
-			
-                    &nbsp;&nbsp;+91 7278003722&nbsp;&nbsp;
-                    
-                    	
-                    
-                </span>
-            </div>  
-            <div class="fb-like" data-href="https://www.facebook.com/KnowledgeLab-World-865527740189412/" data-layout="standard" data-action="like" data-show-faces="false" data-share="true" style="padding-top: 10px;width: 100px">
-             
-            </div><p class="copyright pull-right" style=" color: white;padding-top: 10px;margin-right: 300px; font-size: 12px"> Copyright <i class="fa fa-copyright" aria-hidden="true"></i> Knowledgelab 2016. All rights reserved.</p>
-           
+            <span class="dis-blk" style=" font-size: 14px">
+              Call us on &nbsp; <i class="fa fa-phone"></i>            
+            </span>
+            <span id="contact-ind" style=" font-size: 14px" data-val="+91-88808-62004">
+              &nbsp;&nbsp;+91 7278003722&nbsp;&nbsp;
+            </span>
+          </div>  
+          <div class="fb-like" data-href="https://www.facebook.com/KnowledgeLab-World-865527740189412/" data-layout="standard" data-action="like" data-show-faces="false" data-share="true" style="padding-top: 10px;width: 100px">
+          </div>
+          <p class="copyright pull-right" style=" color: white;padding-top: 10px;margin-right: 300px; font-size: 12px"> Copyright <i class="fa fa-copyright" aria-hidden="true"></i> Knowledgelab 2016. All rights reserved.</p>
         </div>
-    </div>
-</div>
+      </div>
+    </div> -->
     
     <div class="modal fade" id="myModal1" role="dialog">
     <div class="modal-dialog modal-sm">
@@ -1296,73 +1288,44 @@ Analyze the feasibility<br> of the designs<br><br>Showcase the <br>designs virtu
       </div>
     </div>
   </div>
-   <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
-
-
-
-    <!-- jQuery -->
-    <script src="js/jquery-1.12.0.min.js"></script>
-    <script type="text/javascript" src="js/jssor.slider.min.js"></script>
-    
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
-    <script>
-                /* When the user clicks on the button, 
-                toggle between hiding and showing the dropdown content */
-                function myFunction() {
-                    document.getElementById("myDropdown").classList.toggle("show");
-                }
-
-                // Close the dropdown if the user clicks outside of it
-                window.onclick = function(event) {
-                  if (!event.target.matches('.fa-bars')) {
-
-                    var dropdowns = document.getElementsByClassName("dropdown-content");
-                    var i;
-                    for (i = 0; i < dropdowns.length; i++) {
-                      var openDropdown = dropdowns[i];
-                      if (openDropdown.classList.contains('show')) {
-                        openDropdown.classList.remove('show');
-                      }
-                    }
-                  }
-                };
-        </script>
-        <script>
-             /* When the user clicks on the button, 
-                toggle between hiding and showing the dropdown content */
-                $(".mybtn").click(function(e)
-                {
-                    e.preventDefault();
-                     //alert("Hello");
-                     $("#myDropdown").toggle();
-                     //document.getElementById("myDropdown").classList.toggle("show");
-                     //$("#myDropdown").addClass("show");
-                });
-                function myFunction() {
-                   
-                    
-                }
-        </script>
-    <!-- Scrolling Nav JavaScript -->
-    <script src="js/jquery.easing.min.js"></script>    
-    <script src="js/animated_menu_and_scrollpy.js"></script>
-    <!-- // <script src="js/modal.js"></script> -->
-    <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-75761760-1', 'auto');
-  ga('send', 'pageview');
-
-</script>
-
+  <script src="js/jquery-1.12.0.min.js"></script>
+  <script type="text/javascript" src="js/jssor.slider.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script>
+    /* When the user clicks on the button, 
+    toggle between hiding and showing the dropdown content */
+    function myFunction() {
+      document.getElementById("myDropdown").classList.toggle("show");
+    }
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function(event) {
+      if (!event.target.matches('.fa-bars')) {
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+          }
+        }
+      }
+    };
+   /* When the user clicks on the button, 
+      toggle between hiding and showing the dropdown content */
+    $(".mybtn").click(function(e) {
+      e.preventDefault();
+      $("#myDropdown").toggle();
+    });
+  </script>
+  <script src="js/jquery.easing.min.js"></script>    
+  <script src="js/animated_menu_and_scrollpy.js"></script>
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-75761760-1', 'auto');
+    ga('send', 'pageview');
+  </script>
 </body>
 </html>

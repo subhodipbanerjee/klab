@@ -9,7 +9,7 @@ if(is_numeric($memberID) && !empty($active)){
 		':active' => $active
 	));
 	if($stmt->rowCount() == 1){
-		header('Location: login.php?action=active');
+		header('Location: index.php?action=active');
 		exit;
 	} else {
 		echo "Your account could not be activated."; 

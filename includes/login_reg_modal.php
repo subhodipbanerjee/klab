@@ -1,9 +1,7 @@
 <?php
 require('includes/config.php');
-
 if(isset($_POST['registration'])) {
-  //very basic validation
-  if(strlen($_POST['username']) < 3){
+  if(strlen($_POST['username']) < 3) {
     $error[] = 'Username is too short.';
   } else {
     $stmt = $db->prepare('SELECT username FROM members WHERE username = :username');
@@ -13,22 +11,22 @@ if(isset($_POST['registration'])) {
       $error[] = 'Username provided is already in use.';
     }
   }
-  if(strlen($_POST['password']) < 3){
+  if(strlen($_POST['password']) < 6) {
     $error[] = 'Password is too short.';
   }
   //email validation
-  if(!filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)){
+  if(!filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
     $error[] = 'Please enter a valid email address';
   } else {
     $stmt = $db->prepare('SELECT email FROM members WHERE email = :email');
     $stmt->execute(array(':email' => $_POST['email']));
     $row = $stmt->fetch(PDO::FETCH_ASSOC);
-    if(!empty($row['email'])){
+    if(!empty($row['email'])) {
       $error[] = 'Email provided is already in use.';
     }
   }
   //if no errors have been created carry on
-  if(!isset($error)){
+  if(!isset($error)) {
     $hashedpassword = $user->password_hash($_POST['password'], PASSWORD_BCRYPT);
     $activasion = md5(uniqid(rand(),true));
     try {
@@ -48,25 +46,23 @@ if(isset($_POST['registration'])) {
         ':stream' => $_POST['stream'],
         ':year' => $_POST['year'],
       ));
-      print_r($stmt);
       $id = $db->lastInsertId('memberID');
-      echo $id;
       //send email
       $to = $_POST['email'];
       $subject = "Registration Confirmation";
       $body = "<p>Thank you for registering at demo site.</p>
       <p>To activate your account, please click on this link: <a href='".DIR."activate.php?x=$id&y=$activasion'>".DIR."activate.php?x=$id&y=$activasion</a></p>
       <p>Regards Site Admin</p>";
-      $mail = new Mail();
-      $mail->setFrom(SITEEMAIL);
-      $mail->addAddress($to);
-      $mail->subject($subject);
-      $mail->body($body);
-      $mail->send();
-      //redirect to index page
+      $from = "noreply@knowledgelab.co.in";
+      // $mail = new Mail();
+      // $mail->setFrom(SITEEMAIL);
+      // $mail->addAddress($to);
+      // $mail->subject($subject);
+      // $mail->body($body);
+      // $mail->send();
+      mail($to,$subject,$body,"From:".$from);
       header('Location: index.php?action=joined');
       exit;
-    //else catch the exception and show the error.
     } catch(PDOException $e) {
       $error[] = $e->getMessage();
       print_r($error);
