@@ -1,0 +1,45 @@
+.leftBox{
+	border: 1px solid #000;	
+	height: 316px;
+}
+
+.leftBoxHeader {
+	background-color: #006cae;
+	z-index: 999;
+	padding: 20px 15px 30px;
+}
+
+.topBar{
+	margin-bottom: 0px !important;
+	margin-top: 0px !important;
+	border-width: 2px !important;
+}
+
+.middleBar{
+	margin-bottom: 0px !important;
+	margin-top: 50px !important;
+	border-width: 2px !important;
+}
+
+.middleText ul {
+
+	list-style-type: disc;
+	padding-left:15px; 
+
+}
+
+.headerText {
+	color: #fff;
+}
+
+.leftBoxMiddle {
+	padding: 15px;
+	background-color: #fff;
+	z-index: -999;
+	height: 150px;
+}
+
+.leftBoxFooter{
+	z-index: 999;
+	padding: 15px;
+}
