@@ -19,7 +19,10 @@ class User extends Password{
 
 	public function login($username,$password){
 		$row = $this->get_user_hash($username);
+		print_r($password);
+		print_r($row['password']);
 		if($this->password_verify($password,$row['password']) == 1){
+		// if($password == $row['password']) {
 	    $_SESSION['loggedin'] = true;
 	    $_SESSION['username'] = $row['username'];
 	    $_SESSION['memberID'] = $row['memberID'];

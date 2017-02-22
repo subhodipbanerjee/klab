@@ -42,21 +42,19 @@ The padding is very important to make sure the scrollspy picks up the right area
 of those sections to manage the look and feel of the site. */
 
 .intro-section {
-    height: 70%;
-    
-    padding-top: 120px;
+    padding-top: 18%;
     text-align: center;
     background-image: url("../images/knowledgelab.png");
-    
+    position: static;
     background-repeat: no-repeat;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    height: 100%;
 }
 
 .intro1-section {
     height: 100%;
      padding-top: 250px;
     text-align: center;
-   
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 .thank-back
