@@ -67,8 +67,8 @@
       <div class="collapse navbar-collapse navbar-ex1-collapse navbar-top" style=" padding-right: 20px" > 
         <ul class="nav navbar-nav navbar-right ">
           <!-- <li><a class="page-scroll" href="http://www.testezee.com" target="windowname"><h4 style="color: #333; font-family: myFirstFont">Online Test</h4></a></li> -->
-          <li><a class="page-scroll" href="#submenu"><h4 style="color: #333; font-family: myFirstFont; font-size: 16px; ">LEARNING APP</h4></a></li>
-          <li><a class="page-scroll" href="#menu2"><h4 style="color: #333; font-family: myFirstfont; font-size: 16px;">TRAINING LAB</h4></a></li>
+          <li><a class="page-scroll" href="#submenu"><h4 style="color: #333; font-family: myFirstFont;  ">LEARNING APP</h4></a></li>
+          <li><a class="page-scroll" href="#menu2"><h4 style="color: #333; font-family: myFirstfont; ">TRAINING LAB</h4></a></li>
           <li class="visible-xs"><a class="page-scroll" href="#menu5"><h5 style="color: #333; margin-top: 0px; font-family: myFirstFont">Testimonial</h5></a></li>
           <li class="visible-xs"><a class="page-scroll" href="index1.html#submenu6"><h5 style="color: #333; margin-top: 0px;font-family: myFirstFont">Mission</h5></a></li>
           <li class="visible-xs"><a class="page-scroll" href="index1.html#submenu4"><h5 style="color: #333; margin-top: 0px;font-family: myFirstFont">About Us</h5></a></li>
