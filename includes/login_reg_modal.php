@@ -123,11 +123,11 @@ if(isset($_POST['login'])){
         <form id="login-form" method="post" action="" autocomplete="off" name="login">
           <div class="modal-body">
             <div class="fblogin"><a class="fbloginBtn" onclick="">Login with facebook account</a></div>
-            <div class="knowledgelablogin"><span style="padding-left: 10px;"> --Or Login With knowledgelab Account--</span></div>
-            <div id="div-login-msg">
+            <div class="knowledgelablogin"><span style="padding-left: 10px; text-align: center;"> --Or Login With knowledgelab Account--</span></div>
+            <!-- <div id="div-login-msg">
               <div id="icon-login-msg" class="glyphicon glyphicon-chevron-right"></div>
               <span id="text-login-msg">Type your username and password.</span>
-            </div>
+            </div> -->
             <input id="login_username" name="username" class="form-control" type="text" placeholder="Username" required>
             <input id="login_password" name="password" class="form-control" type="password" placeholder="Password" required>
             <div class="checkbox">
@@ -172,11 +172,11 @@ if(isset($_POST['login'])){
         <form id="register-form" style="display:none;">
           <div class="modal-body">
             <div class="fblogin"><a class="fbloginBtn" onclick="">Login with facebook account</a></div>
-            <div class="knowledgelablogin"><span style="padding-left: 10px;"> --Or Login With knowledgelab Account--</span></div>
-            <div id="div-register-msg">
+            <div class="knowledgelablogin"><span style="padding-left: 10px;"> --Or fill the form--</span></div>
+            <!-- <div id="div-register-msg">
               <div id="icon-register-msg" class="glyphicon glyphicon-chevron-right"></div>
               <span id="text-register-msg">Register an account.</span>
-            </div>
+            </div> -->
             <input id="register_username" class="form-control" type="text" placeholder="Username (type ERROR for error effect)" required>
             <input id="register_email" class="form-control" type="text" placeholder="E-Mail" required>
             <input id="register_password" class="form-control" type="password" placeholder="Password" required>
@@ -225,21 +225,23 @@ if(isset($_POST['login'])){
         <form id="register-form" role="form" method="post" action="" autocomplete="off" name="registration">
           <div class="modal-body">
             <div class="fblogin"><a class="fbloginBtn" onclick="">Login with facebook account</a></div>
-            <div class="knowledgelablogin"> <span style="padding-left: 10px;"> --Or Login With knowledgelab Account--</span></div>
-            <div id="div-register-msg">
+            <div class="knowledgelablogin"> <span style="padding-left: 10px;"> --Or fill the form--</span></div>
+            <!-- <div id="div-register-msg">
               <div id="icon-register-msg" class="glyphicon glyphicon-chevron-right"></div>
               <span id="text-register-msg">Register an account.</span>
-            </div>
-            <input id="register_username" name="username" class="form-control" type="text" placeholder="Username" required>
-            <input id="register_email" name="email" class="form-control" type="text" placeholder="E-Mail" required>
-            <input id="register_password" name="password" class="form-control" type="password" placeholder="Password" required>
-            <input id="register_mobileNo" name="mobile_no" class="form-control" type="Mobile" placeholder="Mobile no." required>
+            </div> -->
+            <input id="register_username" name="username" class="form-control" type="text" placeholder="Full Name" required>
+            <input id="register_email" name="email" class="form-control" type="text" placeholder="EMail" required>
+            <input id="register_mobileNo" name="mobile_no" class="form-control" type="Mobile" placeholder="Mobile No." required>
+           <input id="register_password" name="password" class="form-control" type="password" placeholder="Password" required>
+            
             <textarea class="form-control" name="address" rows="1" id="address" type="address" placeholder="Address"></textarea>
-            <div class="col-md-6" style="padding-bottom: 5px; padding-left: 0px; padding-right: 5px;"><input id="register_city" name="city" class="form-control" type="text" placeholder="City" required></div>
-            <div class="col-md-6" style="padding-bottom: 5px; padding-left: 0px; padding-right: 0px;"><input id="register_pincode" name="pincode" class="form-control" type="pincode" placeholder="Pincode" required></div>
-            <div class="col-md-6" style="padding-bottom: 5px; padding-left: 0px; padding-right: 5px;">
-              <select id="country" class="form-control" name="stream" type="Mobile" placeholder="Stream">
-                <option>stream 1</option>
+            <div class="col-md-6" style="padding-bottom: 8px; padding-left: 0px; padding-right: 5px;"><input id="register_city" name="city" class="form-control" type="text" placeholder="City" required></div>
+            <div class="col-md-6" style="padding-bottom: 8px; padding-left: 0px; padding-right: 0px;"><input id="register_pincode" name="pincode" class="form-control" type="pincode" placeholder="Pincode" required></div>
+            <input id="register_college" name="college" class="form-control" type="text" placeholder="College" required>
+            <div class="col-md-6" style="padding-bottom: 8px; padding-left: 0px; padding-right: 5px;">
+              <select id="country" class="form-control" name="stream" type="text" placeholder="Stream">
+                <option>stream</option>
                 <option>stream 2</option>
                 <option>stream 3</option>
                 <option>stream 4</option>
@@ -249,16 +251,24 @@ if(isset($_POST['login'])){
                 <option>stream 8</option>
               </select>
             </div>
-            <div class="col-md-6" style="padding-bottom: 5px; padding-left: 0px; padding-right: 0px;">
-              <input id="register_year" name="year" class="form-control" type="text" placeholder="Year" required>
+            <div class="col-md-6" style="padding-bottom: 8px; padding-left: 0px; padding-right: 5px; padding-top: 5px;">
+              <select id="register_year" class="form-control" name="year" type="text" placeholder="Year">
+                <option>Year</option>
+                <option>2017</option>
+                <option>2016</option>
+                <option>2015</option>
+                <option>2014</option>
+                <option>2013</option>
+                <option>2012</option>
+                <option>2011</option>
+                <option>2010</option>
+              </select>
             </div>
-            <input id="register_college" name="college" class="form-control" type="text" placeholder="College Name" required>
-          </div>
-          <div class="modal-footer">
-            <div class="col-md-7"  style="padding: 6px">
-              <button type="submit" class="btn btn-primary btn-lg btn-block col-md-6" style="font-size: 14px;" name="registration">GO TO FREE TRAIL</button>
+          <div class="modal-footer col-md-12" style="padding-right: 0px; padding-left: 0px;">
+            <div class="col-md-6"  style="padding-right: 5px; padding-left: 0px;">
+              <button type="submit" class="btn btn-primary btn-lg btn-block col-md-6" style="font-size: 14px;" name="registration">FREE TRAIL</button>
             </div>
-            <div class="col-md-5"  style="padding: 6px">
+            <div class="col-md-6"  style="padding-left: 5px; padding-right: 0px;">
               <button type="submit" class="btn btn-primary btn-lg btn-block col-md-6" style="font-size: 14px;" name="registration">BUY NOW</button>
             </div>
           </div>

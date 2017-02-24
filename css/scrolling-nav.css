@@ -42,13 +42,13 @@ The padding is very important to make sure the scrollspy picks up the right area
 of those sections to manage the look and feel of the site. */
 
 .intro-section {
-    padding-top: 18%;
+    padding-top: 16%;
     text-align: center;
     background-image: url("../images/knowledgelab.png");
     position: static;
     background-repeat: no-repeat;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    height: 80%;
+    height: 84%;
 }
 
 .intro1-section {
@@ -90,7 +90,7 @@ of those sections to manage the look and feel of the site. */
     font-family: Montserrat,"Helvetica Light",Helvetica,Arial,sans-serif;
 }
 .submenu1-section {
-    height: 100%;
+   /* height: 100%;*/
     /*margin-top: 10px;*/
     text-align: center;
    background-color: #c6dcff;
@@ -121,8 +121,8 @@ of those sections to manage the look and feel of the site. */
 
 
 .menu2-section {
-    height: 80%;
-    padding-top: 25px;
+    height: 65%;
+    padding-top: 10px;
     text-align: center;
     background-color: white;
     
@@ -141,7 +141,7 @@ of those sections to manage the look and feel of the site. */
     
 }
 .menu3-section {
-    height: 100%;
+    height: 85%;
     padding-top: 0px;
     text-align: center;
      /*background-image: url("../images/mission.gif");*/
@@ -152,8 +152,8 @@ of those sections to manage the look and feel of the site. */
 }
 
 .menu5-section {
-    height: 100%;
-    padding-top: 60px;
+    height: 89%;
+    padding-top: 5px;
     text-align: center;
     background-color: white;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -161,10 +161,10 @@ of those sections to manage the look and feel of the site. */
 
 .menu6-section {
     height: 80%;
-    padding-top: 150px;
+    padding-top: 90px;
     text-align: center;
-    background-color: white;
-     background-image: url("../images/mission.gif");
+    background-color: #c6dcff;
+     /*background-image: url("../images/mission.gif");*/
     background-repeat: no-repeat;
     background-size: 100% 100%;  
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -180,10 +180,10 @@ of those sections to manage the look and feel of the site. */
 
 .menu4-section {
      height: 85%;
-    padding-top: 150px;
+    padding-top: 15px;
     text-align: center;
     background-color: white;
-     background-image: url("../images/mission.gif");
+     /*background-image: url("../images/mission.gif");*/
     background-repeat: no-repeat;
     background-size: 100% 100%;  
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;

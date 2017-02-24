@@ -9,15 +9,15 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="keywords" content="Knowledgelab - E-learning, Finishing School, Software Training, Technology Training, Tech Enabled Learning, Engineering College, Digital Library, Mini Project, Major Project, Final Semester Project,"/>	
-<meta name="description" content="The finest subject wise reference material for engineering and BCA/MCA students on Windows and Android."/>
-<meta name="ROBOTS" content="ALL"/>
-<meta http-equiv="content-language" content="en,fr,HI,BN,OR"/>
-<meta name="geo.position" content="22.572646;88.363895"/>
-<meta name="geo.placename" content="sector-v,saltlake, Kolkata, INDIA"/>
-<meta name="geo.region" content="IN-WB"/>
-<title>Knowledgelab - E-learning | Finishing School | Software Training | Technology Training | Tech Enabled Learning | Engineering College</title>
-<link rel="shortcut icon" href="images/logoIcon.jpg" style="height:95%; width:90%;" type="image/x-icon" >
+    <meta name="keywords" content="Knowledgelab - E-learning, Finishing School, Software Training, Technology Training, Tech Enabled Learning, Engineering College, Digital Library, Mini Project, Major Project, Final Semester Project,"/>	
+    <meta name="description" content="The finest subject wise reference material for engineering and BCA/MCA students on Windows and Android."/>
+    <meta name="ROBOTS" content="ALL"/>
+    <meta http-equiv="content-language" content="en,fr,HI,BN,OR"/>
+    <meta name="geo.position" content="22.572646;88.363895"/>
+    <meta name="geo.placename" content="sector-v,saltlake, Kolkata, INDIA"/>
+    <meta name="geo.region" content="IN-WB"/>
+    <title>Knowledgelab - E-learning | Finishing School | Software Training | Technology Training | Tech Enabled Learning | Engineering College</title>
+    <link rel="shortcut icon" href="images/logoIcon.jpg" style="height:95%; width:90%;" type="image/x-icon" >
 
     <title>Scrolling Nav - Start Bootstrap Template</title>
     <link rel="stylesheet" href="css/animate.min.css" type="text/css">
@@ -32,10 +32,10 @@
     <link href="css/style.css" rel="stylesheet">
     
     <!-- media queries css -->
-<link href="css/media-queries.css" rel="stylesheet" type="text/css">
-<link href="css/media-queries_attach.css" rel="stylesheet" type="text/css">
-<link rel="stylesheet" href="css/font-awesome.css"/>
-<link rel="stylesheet" href="css/font-awesome-animation.min.css">
+    <link href="css/media-queries.css" rel="stylesheet" type="text/css">
+    <link href="css/media-queries_attach.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/font-awesome.css"/>
+    <link rel="stylesheet" href="css/font-awesome-animation.min.css">
 </head>
 
 <!-- The #page-top ID is part of the scrolling feature - the data-spy and data-target are part of the built-in Bootstrap scrollspy function -->
@@ -125,7 +125,7 @@
     </nav>
     
     <section id="submenu6" class="submenu6-section">
-    <div class="col-lg-12" style=" background-color: white">
+    <div class="col-lg-12" style=" background-color: #c6dcff;  padding-top: 25px">
                   <h3 class="text-center border-side" >
                       <span style=" background-color: white; background-image: none">Our Mission</span>   </h3>   <br><br>
                 </div>
@@ -133,21 +133,22 @@
      <section id="menu6" class="menu6-section">
         <div class="container">
             <div class="row">
-                <div class="col-small-12 ">
-                    <div id="left">
-                        <p class="text-center border-side3" style=" text-align: left; font-family: myFirstFont">
-                            We make youngsters Employable and connect them to the Industry.<p><br>
-                        <p class="semi-text" style=" text-align: left;font-family: myFirstFont"> "Unemployability"…A bigger problem than Unemployment.<br><br>
-                        Knowledge Lab, through its Learning App & Training Lab, has a mission to make millions of students employable and connect them to the industry.</p></div>
-                    <div id="right" class="title-area2">
-                        <p class="left side-topic pull-left title2 comment more" style=" font-family: myFirstFont;"><br>Engineering continues to be one of the most sought after career paths for thousands of students. However, 
-                        there is significant mismatch of expectations between prospective employers and graduating students due to “theoretical” and outdated university 
-                        syllabus with little link to industry applications.<br><br>Colleges face a dearth of quality and availability of good faculty.
-                        Employers face serious challenge with Domain Knowledge, Technical Acumen, Communication, Attitude, Aptitude and Soft Skills of students.
-                  </p> 
-                  
+                <div class="col-md-12 ">
+                    <div class="container">
+                        <div id="left " class="col-md-8">
+                            <p class="text-center border-side3" style=" text-align: left; font-family: myFirstFont">
+                                We make youngsters Employable and connect them to the Industry.<p><br>
+                            <p class="semi-text" style=" text-align: left;font-family: myFirstFont"> "Unemployability"…A bigger problem than Unemployment.<br><br>
+                            Knowledge Lab, through its Learning App & Training Lab, has a mission to make millions of students employable and connect them to the industry.</p>
+                        </div>
+                        <div id="right " class="title-area2 col-md-4"  style="padding-top: 15px">
+                            <p class="left side-topic pull-left title2 comment more" style=" font-family: myFirstFont;"><br>Engineering continues to be one of the most sought after career paths for thousands of students. However, 
+                            there is significant mismatch of expectations between prospective employers and graduating students due to “theoretical” and outdated university 
+                            syllabus with little link to industry applications.<br><br>Colleges face a dearth of quality and availability of good faculty.
+                            Employers face serious challenge with Domain Knowledge, Technical Acumen, Communication, Attitude, Aptitude and Soft Skills of students.
+                            </p> 
+                        </div>
                     </div>
-                 
                 </div>
             </div>
         </div>
@@ -159,27 +160,28 @@
                       <span style=" background-color: white; background-image: none">About Us</span>   </h3>   <br><br>
                 </div>
     </section>
-   <section id="menu4" class="menu4-section">
+   <section id="menu4" class="menu4-section col-md-12">
         <div class="container">
             <div class="row">
-                <div class="col-small-12 ">
-                    <div id="left">
+                <div class="col-small-12">
+                    <div id="left" class="col-md-8">
                         <p class="text-center border-side3" style=" text-align: left; font-family: myFirstFont">
                          We deeply feel that enhancing employability shall transform the society and the nation.   
-                        <p><br>
+                        </p><br>
                         <p class="semi-text" style=" text-align: left;font-family: myFirstFont"> We started in 2012 with the vision of enhancing employability of higher
- education students. Our approach, innovation, scalability and benefit to
- students led us to be incubated at IIT Kharagpur in 2013.
-                            <br><br>As on date, we collaborate with 2 large universities and reach out to 18,000 students.</p></div>
-                    <div id="right" class="title-area2">
+                             education students. Our approach, innovation, scalability and benefit to
+                             students led us to be incubated at IIT Kharagpur in 2013.
+                            <br><br>As on date, we collaborate with 2 large universities and reach out to 18,000 students.
+                        </p>
+                    </div>
+
+                    <div id="right" class="title-area2 col-md-4">
                         <p class="left side-topic2 pull-left title2 comment more" style=" font-family: myFirstFont">
                             <br>With years of working with students while they were in college and after they got hired, the leadership team of Knowledge Lab has 
                             developed a pedagogy to walk with the students from admission to graduation and connect them to the industry. We bridge the information 
                             gap between students and employers. Students get to know relevant vacancies and can apply directly without depending on limited campus 
                             opportunities. Employers see genuine resumes, track the progress of students over a multi-year timeframe and judge adaptability and fitment in the organization.<br><br>
-                    
-                  </p> 
-                  
+                        </p> 
                     </div>
                  
                 </div>
@@ -188,36 +190,27 @@
     </section>
     
     <section id="submenu8" class="submenu8-section">
-    <div class="col-lg-12" style=" background-color: white">
-                  <h1 class="text-center border-side">
-                      <span style=" background-color: white; background-image: none">Work With Us</span>    </h1>   <br><br>
-                </div>
+        <div class="col-lg-12" style=" background-color: #c6dcff;  padding-top: 25px">
+          <h1 class="text-center border-side">
+              <span style=" background-color: white; background-image: none">Work With Us</span>    </h1>   <br><br>
+        </div>
     </section>
-     <section id="menu8" class="menu8-section">
-         <div class="container">
+     <section id="menu8" class="" style="background-color: #c6dcff;  padding-top: 25px">
+        <div class="container">
             <div class="row">
-             <div class="col-lg-12">
-                 <div id="left">
+             <div class="col-md-12">
+                    <div id="left" class="col-md-8">
                         <p class="text-center border-side3" style=" text-align: left; font-family: myFirstFont">
                          If you remain calm in the chaotic world of startups and get excited with the 
-                      fierce growth of a new company, please drop by to see us. We guarantee you a steep learning curve.   
+                         fierce growth of a new company, please drop by to see us. We guarantee you a steep learning curve.   
                         <p><br>
-                        </div>
-                    <div id="right" class="title-area2">
-                        <p class="left side-topic1 pull-left title2" style=" font-family: myFirstFont">
-                        <br><br> Content Developer<br><br>PHP Developer for <br>Website Development<br><br>Mobile Application Developer<br><br>UX Designer<br><br>Operations Executive <br><br>Digital Marketing Guru
-                    
-                  </p> 
-                   
-                  
                     </div>
-                
-
-                    
-                </div>   
-                
-            </div>
-            
+                    <div id="workright" class="title-area2 col-md-4">
+                        <p class="left side-topic1 pull-left title2" style=" font-family: myFirstFont">
+                        <br><br> Content Developer<br><br>PHP Developer for <br>Website Development<br><br>Mobile Application Developer<br><br>UX Designer<br><br>Operations Executive <br><br>Digital Marketing Guru </p>     
+                    </div>
+                </div>      
+            </div>   
         </div>
     </section>
     <section id="menu9" class="menu9-section">

@@ -1,9 +1,9 @@
 <?php include('includes/header.php'); ?>
   <section id="intro" class="intro-section">
     <div class="container intro-container">
-      <div class="intro-sec  col-md-6">
+      <div class="intro-sec  col-md-4">
       	<div class="video" style="text-align: center;">
-        <i class="fa fa-play-circle-o fa-4" aria-hidden="true" style="font-size: 60px; color:  #9ab51f;"> </i>
+        <i class="fa fa-play-circle-o fa-4" aria-hidden="true" style="font-size: 45px; color:  #9ab51f;"> </i>
         <h4 style="font-size: 16px; color:  #FFF; text-align: center;">VIEW DEMO</h4>
 				</div>
         <?php if($user->is_logged_in() == true) { ?>
@@ -11,24 +11,24 @@
             <button class="page-scroll btn btn-xl app-btn">FREE TRAIL</button>
           </div>
           <div class="col-md-2 video-btn">
-            <button class="page-scroll btn btn-xl app-btn">SUBSCRIBE</button>
+            <button class="page-scroll btn btn-xl app-btn">BUY APP</button>
           </div>
         <?php } else { ?>
           <div class="col-md-4 col-md-offset-2 video-btn">
             <button class="page-scroll btn btn-xl app-btn" data-toggle="modal" data-target="#login-modal">FREE TRAIL</button>
           </div>
           <div class="col-md-2 video-btn">
-            <button class="page-scroll btn btn-xl app-btn" data-toggle="modal" data-target="#login-modal">SUBSCRIBE</button>
+            <button class="page-scroll btn btn-xl app-btn" data-toggle="modal" data-target="#login-modal" style="padding: 1px 17px;">BUY APP</button>
           </div>
         <?php } ?>
       </div> 
       <div class="col-md-2"></div>
-      <div class="intro-text col-md-4 col-xs-hidden col-sm-hidden">
+      <div class="intro-text col-md-8 col-xs-hidden col-sm-hidden">
         <div class="container">
-          <div class="text" style="text-align: left; font-family: myFirstFont; font-size: 18px; float: right; font-weight: bold;">
-            <p style="color:  #9ab51f;"> Excel in college</p>
-            <p style="color:  #fff;"> With the worlds first <br> Learning App with best <br> open source content <br> mapped to your syllabus.</p><br><br>
-            <p style="color:  #9ab51f; font-size:15px; ">GET READY FOR TOMORROW. TODAY.</p>
+          <div class="text" style="text-align: left; font-family: myFirstFont; font-size: 22px; float: right; ">
+            <p><span style="color:  #9ab51f;"> Excel in college </span><br/>
+             <span style="color:  #fff;">With the worlds first <br/> Learning App with best <br/> open source content <br/> mapped to your syllabus.</span></p><br/>
+            <p style="color:  #9ab51f; font-size:18px; ">GET READY FOR TOMORROW. TODAY.</p>
           </div>
         </div>
       </div>      
@@ -110,7 +110,7 @@
           .jssora03l.jssora03ldn { background-position: -243px -33px; }
           .jssora03r.jssora03rdn { background-position: -303px -33px; }
         </style>
-        <div id="jssor_1" style="position: relative; margin: 0 auto; top: 0px; left: 0px; width: 840px; height: 400px; overflow: hidden; visibility: hidden;">
+        <div id="jssor_1" style="position: relative; margin: 0 auto 20px; top: 0px; left: 0px; width: 840px; height: 400px; overflow: hidden; visibility: hidden;">
           <div data-u="slides" style="cursor: default; position: absolute;top: 50px; left: 10px; width: 1000px; height: 600px;overflow: hidden">
             <div class="col-md-4 col-sm-6 portfolio-item">  
               <div class="portfolio-caption bottom-section1" style=" text-align: center; background-color: #f9f9f9">
@@ -222,12 +222,12 @@
           .jssora503l.jssora503ldn { background-position: -243px -33px; }
           .jssora503r.jssora503rdn { background-position: -303px -33px; }
         </style>
-        <div id="jssor_51" style="position: relative; margin: 0 auto; top: 0px; left: 0px; width: 840px; height: 600px; overflow: hidden; visibility: hidden;">
+        <div id="jssor_51" style="position: relative; margin: 0 auto; top: 0px; left: 0px; width: 840px; height: 500px; overflow: hidden; visibility: hidden;">
         <div data-u="loading" style="position: absolute; top: 0px; left: 0px;">
           <div style="filter: alpha(opacity=70); opacity: 0.7; position: absolute; display: block; top: 0px; left: 0px; width: 100%; height: 100%;"></div>
           <div style="position:absolute;display:block;background:url('images/loading.gif') no-repeat center center;top:0px;left:0px;width:100%;height:100%;"></div>
         </div>
-        <div data-u="slides" style="cursor: default; position: absolute;top: 50px; left: 10px; width: 1000px; height: 600px;overflow: hidden">
+        <div data-u="slides" style="cursor: default; position: absolute;top: 50px; left: 10px; width: 1000px; height: 500px;overflow: hidden">
           <div class="col-md-4 col-sm-6 portfolio-item">
             <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
               <img src="images/portfolio/android.png" class="img-responsive" alt="myimg">
@@ -259,9 +259,9 @@
               <h5 class="text-muted box-text" style=" font-size: 16px">Understand role of<br> Big Data & Analytics <br><br>Design & develop<br> Big Data solution <br><br>Differentiate between <br>Real Time Querying & <br>Historical Data Analysis<br><br>Generate visualization <br>for BigData using Python,<br> Java, Scala, Spark and BIRT</h5>
             </div>
             <br>
-            <div class=" btn-d">
+            <!-- <div class=" btn-d">
               <button class="page-scroll btn btn-xl btn-sm" onClick="location.href='study_material.php'">STUDY MATERIAL</button>
-            </div>
+            </div> -->
           </div>
           <div class="col-md-4 col-sm-6 portfolio-item">
             <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
@@ -342,7 +342,6 @@
       <h3 class="text-center border-side">
         <span>Seminar and Workshops</span>
       </h3>
-      <br><br>
     </div>
   </section>
   <section id="menu3" class="menu3-section bg-light-gray portfolio-background">
@@ -411,12 +410,12 @@
         .jssora013l.jssora013ldn { background-position: -243px -33px; }
         .jssora013r.jssora013rdn { background-position: -303px -33px; }
       </style>
-      <div id="jssor_11" style="position: relative; margin: 0 auto; top: 0px; left: 0px; width: 840px; height: 600px; overflow: hidden; visibility: hidden;">
+      <div id="jssor_11" style="position: relative; margin: 0 auto; top: 0px; left: 0px; width: 840px; height: 500px; overflow: hidden; visibility: hidden;">
         <div data-u="loading" style="position: absolute; top: 0px; left: 0px;">
           <div style="filter: alpha(opacity=70); opacity: 0.7; position: absolute; display: block; top: 0px; left: 0px; width: 100%; height: 100%;"></div>
           <div style="position:absolute;display:block;background:url('images/loading.gif') no-repeat center center;top:0px;left:0px;width:100%;height:100%;"></div>
         </div>
-        <div data-u="slides" style="cursor: default; position: absolute;top: 50px; left: 10px; width: 1000px; height: 600px;overflow: hidden">
+        <div data-u="slides" style="cursor: default; position: absolute;top: 50px; left: 10px; width: 1000px; height: 500px;overflow: hidden">
           <div class="col-md-4 col-sm-6 portfolio-item">
             <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
               <img src="images/portfolio/swone.png" class="img-responsive" alt="myimg">
@@ -692,14 +691,14 @@
     </style>
 
 
-    <div id="jssor_31" style="position: relative; margin: 0 auto; top: 0px; left: 0px; width: 840px; height: 600px; overflow: hidden; visibility: hidden;">
+    <div id="jssor_31" style="position: relative; margin: 0 auto; top: 0px; left: 0px; width: 840px; height: 500px; overflow: hidden; visibility: hidden;">
         <!-- Loading Screen -->
         <div data-u="loading" style="position: absolute; top: 0px; left: 0px;">
             <div style="filter: alpha(opacity=70); opacity: 0.7; position: absolute; display: block; top: 0px; left: 0px; width: 100%; height: 100%;"></div>
             <div style="position:absolute;display:block;background:url('images/loading.gif') no-repeat center center;top:0px;left:0px;width:100%;height:100%;"></div>
         </div>
         
-        <div data-u="slides" style="cursor: default; position: absolute;top: 50px; left: 10px; width: 1000px; height: 600px;overflow: hidden">
+        <div data-u="slides" style="cursor: default; position: absolute;top: 50px; left: 10px; width: 1000px; height: 500px;overflow: hidden">
             <div class="col-md-4 col-sm-6 portfolio-item" >
                 <div class="std-img" style=" padding-left: 50px">
                     <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
@@ -763,7 +762,7 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-12 contact_text-center">
-            <h2>Contact Us</h2> 
+            <h2>Contact Us</h2> <br/>
           </div>
         </div>
         <div class="row">
