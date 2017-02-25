@@ -1,6 +1,11 @@
 .leftBox{
 	border: 1px solid #000;	
-	height: 316px;
+	height: 294px;
+}
+
+.leftBox.leftBox-uem {
+
+	height: 314px  !important;
 }
 
 .leftBoxHeader {
@@ -42,4 +47,9 @@
 .leftBoxFooter{
 	z-index: 999;
 	padding: 15px;
+}
+
+.content {
+	background-color: #fff;
+	margin-top: 35px; 
 }
