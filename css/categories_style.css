@@ -454,11 +454,13 @@ body{
 	float:left;
 	width: 100%;
 	font-family: 'Ropa Sans', sans-serif;
+	font-size: 16px; 
 }
 .content-sidebar h4,.recent-videos h5{
-	background:#0099cc;
+	background:#006cae;
 	color:#fff;
 	padding: 10px;
+	font-size: 16px; 
 	text-transform: uppercase;
 	font-family: 'Ropa Sans', sans-serif;
 }
