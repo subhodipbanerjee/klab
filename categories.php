@@ -2,6 +2,11 @@
 <link rel="stylesheet" href="css/customCategoryStyle.css" type="text/css">
 <link href="css/categories_style.css" rel="stylesheet" type="text/css"  media="all" />
 
+<?php
+  $universities = $db->query('SELECT * FROM universities');
+  $universities = $universities->fetchAll(PDO::FETCH_ASSOC);
+?>
+
 	<div class="container" style="margin-top : 34px;">
 		<div class="row">
 			<div class="content col-md-12">
@@ -14,10 +19,9 @@
 					    			<img src="images/category_images/fi.png" alt="" />Categories
 					    		</h4>
 									<ul>
-										<li><a href="#" class="leftMenu_uem" data-module="action1"> UEM </a></li>
-										<li><a href="#" class="leftMenu_iim" data-module="action2">IIM</a></li>
-										<li><a href="#"  class="leftMenu_techno" data-module="action3">TECHNO</a></li>
-										<li><a href="#"  class="leftMenu_gargi" data-module="action4">GARGI MEMORIAL</a></li>
+										<?php foreach($universities as $university) { ?>
+											<li><a href="#" class="leftMenu_uem" data-module="action1"><?php echo $university['name']; ?></a></li>
+										<?php } ?>
 									</ul>
 						    	</div>
 					    	</div>

@@ -13,9 +13,9 @@
     $.sidebarMenu($('.sidebar-menu'))
   </script>
   <style type="text/css">
-    /*.td{
+    .td{
       overflow:scroll;
-    }*/
+    }
   </style>
 </head>
 <body>

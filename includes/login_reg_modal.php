@@ -21,7 +21,6 @@
 
 </style>
 <?php
-// require('includes/config.php');
 if(isset($_POST['registration'])) {
   if(strlen($_POST['username']) < 3) {
     $error[] = 'Username is too short.';
