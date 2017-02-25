@@ -13,15 +13,15 @@
     $.sidebarMenu($('.sidebar-menu'))
   </script>
   <style type="text/css">
-    .td{
+    /*.td{
       overflow:scroll;
-    }
+    }*/
   </style>
 </head>
 <body>
 
-<table width="100%" border="0" cellspacing="0" cellpadding="2" bgcolor="#007ec3">
-  <tr>
+<table width="100%" border="0" cellspacing="0" cellpadding="2">
+  <tr bgcolor="#007ec3">
     <td width="20%">&nbsp;</td>
     <td width="20%">&nbsp;</td>
     <td width="20%">

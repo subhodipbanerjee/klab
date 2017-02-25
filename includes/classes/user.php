@@ -9,20 +9,18 @@ class User extends Password{
 
 	private function get_user_hash($username){
 		try {
-			$stmt = $this->_db->prepare('SELECT password, username, memberID FROM members WHERE username = :username AND active="Yes" ');
+			$stmt = $this->_db->prepare('SELECT password, username, memberID FROM members WHERE email = :username OR mobile_no = :username AND active="Yes" ');
 			$stmt->execute(array('username' => $username));
-			return $stmt->fetch();
+			$stmt = $stmt->fetch();
+			return $stmt;
 		} catch(PDOException $e) {
-		  echo '<p class="bg-danger">'.$e->getMessage().'</p>';
+		  echo '<div class="alert alert-danger" role="alert">'.$e->getMessage().'</div>';
 		}
 	}
 
 	public function login($username,$password){
 		$row = $this->get_user_hash($username);
-		print_r($password);
-		print_r($row['password']);
-		if($this->password_verify($password,$row['password']) == 1){
-		// if($password == $row['password']) {
+		if($this->password_verify($password,$row['password']) == 1) {
 	    $_SESSION['loggedin'] = true;
 	    $_SESSION['username'] = $row['username'];
 	    $_SESSION['memberID'] = $row['memberID'];

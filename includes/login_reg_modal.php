@@ -7,6 +7,19 @@
     $("#page-top").css("padding-right","0px;");
   });
 </script>
+<style type="text/css">
+
+.alert {
+  border: 1px solid transparent;
+  border-radius: 4px;
+  margin-bottom: 0;
+  margin-left: 25%;
+  margin-top: 10px;
+  padding: 15px;
+  position: fixed;
+}  
+
+</style>
 <?php
 // require('includes/config.php');
 if(isset($_POST['registration'])) {
@@ -34,6 +47,24 @@ if(isset($_POST['registration'])) {
       $error[] = 'Email provided is already in use.';
     }
   }
+
+  if (strlen($_POST['mobile_no']) < 10 || strlen($_POST['mobile_no']) > 10) {
+    $error[] = 'Invalid phone number';
+  } else {
+    $stmt = $db->prepare('SELECT mobile_no FROM members WHERE mobile_no = :mobile_no');
+    $stmt->execute(array(':mobile_no' => $_POST['mobile_no']));
+    $row = $stmt->fetch(PDO::FETCH_ASSOC);
+    if(!empty($row['mobile_no'])) {
+      $error[] = 'Mobile provided is already in use.';
+    }
+  }
+
+  echo '<div class="alert alert-danger" role="alert"><ul>';
+    foreach ($error as $e) {
+      echo '<li>'.$e.'</li>';
+    }
+  echo '</ul></div>';
+  
   //if no errors have been created carry on
   if(!isset($error)) {
     $hashedpassword = $user->password_hash($_POST['password'], PASSWORD_BCRYPT);
@@ -55,15 +86,6 @@ if(isset($_POST['registration'])) {
         ':year' => $_POST['year']
       ));
       $id = $db->lastInsertId('memberID');
-      // $to = $_POST['email'];
-      // $subject = "Registration Confirmation";
-      // $body = "<p>Thank you for registering at demo site.</p>
-      // <p>To activate your account, please click on this link: <a href='".DIR."activate.php?x=$id&y=$activasion'>".DIR."activate.php?x=$id&y=$activasion</a></p>
-      // <p>Regards Site Admin</p>";
-      // $headers = "MIME-Version: 1.0" . "\r\n";
-      // $headers .= "Content-type:text/html;charset=iso-8859-1" . "\r\n";
-      // $headers .= 'From: <noreply@knowledgelab.co.in>' . "\r\n";
-
       $to = $_POST['email'];
       $subject = "Registration Confirmation";
       $headers = "From: noreply@knowledgelab.co.in\r\n";
@@ -78,7 +100,8 @@ if(isset($_POST['registration'])) {
       exit;
     } catch(PDOException $e) {
       $error[] = $e->getMessage();
-      print_r($error);
+      // print_r($error);
+      echo '<div class="alert alert-danger" role="alert">'.$error.'</div>';
     }
   }
 }
@@ -87,11 +110,12 @@ if(isset($_POST['login'])){
   $username = $_POST['username'];
   $password = $_POST['password'];
   if($user->login($username,$password)){ 
-    $_SESSION['username'] = $username;
+    // $_SESSION['username'] = $username;
     header('Location: categories.php');
     exit;
   } else {
-    $error[] = 'Wrong username or password or your account has not been activated.';
+    $error = 'Wrong username or password or your account has not been activated.';
+    echo '<div class="alert alert-danger" role="alert">'.$error.'</div>';
   }
 }
 
@@ -128,7 +152,7 @@ if(isset($_POST['login'])){
               <div id="icon-login-msg" class="glyphicon glyphicon-chevron-right"></div>
               <span id="text-login-msg">Type your username and password.</span>
             </div>
-            <input id="login_username" name="username" class="form-control" type="text" placeholder="Username" required>
+            <input id="login_username" name="username" class="form-control" type="text" placeholder="Email ID / Mobile number" required>
             <input id="login_password" name="password" class="form-control" type="password" placeholder="Password" required>
             <div class="checkbox">
               <label>

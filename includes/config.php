@@ -12,7 +12,7 @@
 	define('BASE_URL','http://localhost/klab');
 	define('SITEEMAIL','noreply@domain.com');
 	try {
-		$db = new PDO("mysql:host=".DBHOST.";port=8889;dbname=".DBNAME, DBUSER, DBPASS);
+		$db = new PDO("mysql:host=".DBHOST.";port=3306;dbname=".DBNAME, DBUSER, DBPASS);
 		$db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 	} catch(PDOException $e) {
 	  echo '<p class="bg-danger">'.$e->getMessage().'</p>';
