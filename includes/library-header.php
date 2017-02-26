@@ -1,3 +1,4 @@
+<?php require('includes/config.php'); ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -25,7 +26,7 @@
     <td width="20%">&nbsp;</td>
     <td width="20%">&nbsp;</td>
     <td width="20%">
-      <img src="images/Knowledgelab_Oval.png" alt="Knowledgelab" />
+      <a href="<?php echo BASE_URL; ?>"><img src="images/Knowledgelab_Oval.png" alt="Knowledgelab" /></a>
     </td>
     <td width="20%">&nbsp;</td>
     <td width="20%">

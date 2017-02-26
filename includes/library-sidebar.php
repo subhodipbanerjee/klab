@@ -1,21 +1,32 @@
+<?php
+  // echo $_REQUEST['c_id'];
+  $categories = $db->prepare('SELECT * FROM categories where course_id = :course_id');
+  $categories->execute(array('course_id' => $_REQUEST['c_id']));
+  $categories = $categories->fetchAll(PDO::FETCH_ASSOC);
+  $sub_categories = $db->prepare('SELECT * FROM categories where parent = :course_id');
+  $sub_categories->execute(array('course_id' => $_REQUEST['c_id']));
+  $sub_categories = $sub_categories->fetchAll(PDO::FETCH_ASSOC);
+?>
 <table width="100%" border="0"cellspacing="1"cellpadding="1" bgcolor="#ffffff" style="font-size:16px; font-weight:600; font-family:Arial, Helvetica, sans-serif; color:#FF000;">
   <tr>
     <td width="16%" height="600" valign="top" bgcolor="#4bc5e5"><ul class="sidebar-menu">
-      <li>
-        <a href="#">
-          <span>CS 201: Basic Computation & Computer Programming</span><i class="fa fa-angle-left pull-right"></i>
-        </a>
-        <ul class="sidebar-submenu" style="list-style-type:circle; color:#FFFFFF;">
-          <li class="orange"><a href="#sec1a">Fundamentals of Computer</a></li>
-          <li class="orange"><a href="#sec1b">C Fundamentals</a></li>
-          <li class="orange"><a href="#sec1c">Operators & Expressions</a></li>
-          <li class="orange"><a href="#sec1d">Fundamentals of Computer</a></li>
-          <li class="orange"><a href="#sec1e">C Fundamentals</a></li>
-          <li class="orange"><a href="#sec1f">Operators & Expressions</a></li> 
-          <li class="orange"><a href="#sec1g">Structures Union and Files</a></li> 
-        </ul>
-      </li>
-      <li>
+      <?php foreach($categories as $category) { ?>
+        <li>
+          <a href="#">
+            <span><?php echo $category['code'].' : '.$category['name']; ?></span><i class="fa fa-angle-left pull-right"></i>
+          </a>
+          <ul class="sidebar-submenu" style="list-style-type:circle; color:#FFFFFF;">
+            <li class="orange"><a href="#sec1a">Fundamentals of Computer</a></li>
+            <li class="orange"><a href="#sec1b">C Fundamentals</a></li>
+            <li class="orange"><a href="#sec1c">Operators & Expressions</a></li>
+            <li class="orange"><a href="#sec1d">Fundamentals of Computer</a></li>
+            <li class="orange"><a href="#sec1e">C Fundamentals</a></li>
+            <li class="orange"><a href="#sec1f">Operators & Expressions</a></li> 
+            <li class="orange"><a href="#sec1g">Structures Union and Files</a></li>
+          </ul>
+        </li>
+      <?php } ?>
+<!--       <li>
         <a href="#">
           <span>PH 201: Physics I</span> <i class="fa fa-angle-left pull-right"></i>
         </a>
@@ -102,5 +113,5 @@
           <li class="orange"><a href="#sec7n">Measurement of Flow rate : Basic Principles</a></li>
           <li class="orange"><a href="#sec7o">Lab Assignment</a></li>
         </ul>
-      </li>
+      </li> -->
     </td>
