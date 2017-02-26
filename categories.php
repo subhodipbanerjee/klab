@@ -1,26 +1,24 @@
 <?php include('includes/header.php'); ?>
 <link rel="stylesheet" href="css/customCategoryStyle.css" type="text/css">
 <link href="css/categories_style.css" rel="stylesheet" type="text/css"  media="all" />
-
 <?php
   $universities = $db->query('SELECT * FROM universities');
   $universities = $universities->fetchAll(PDO::FETCH_ASSOC);
 ?>
-
-	<div class="container" style="margin-top : 34px;">
+	<div class="" style="margin-top : 40px;">
 		<div class="row">
 			<div class="content col-md-12">
-				<div class="col-md-3">
-					<div class="categories">
+				<div class="categories">
+					<div class="col-md-3">
 						<div class="container">
 							<div class="row">
 								<div class="content-sidebar">
-					    		<h4>
-					    			<img src="images/category_images/fi.png" alt="" />Categories
-					    		</h4>
+									<h4>
+										<img src="images/category_images/fi.png" alt="" />Categories
+									</h4>
 									<ul>
 										<?php foreach($universities as $university) { ?>
-											<li><a href="#" class="leftMenu_uem" data-module="action1"><?php echo $university['name']; ?></a></li>
+											<li><a href="#<?php echo $university['name']; ?>" class="leftMenu_uem" data-module="action1"><?php echo $university['name']; ?></a></li>
 										<?php } ?>
 									</ul>
 						    	</div>
@@ -29,340 +27,70 @@
 					</div>
 				</div>
 				<div class="col-md-9">
-					<div class="container">
-						<div class="row">
-							<div class="categories-types">
-								<div class="recent-videos" id="uem">
-									<h5><img src="images/category_images/recent.png" alt="" />Recent-videos</h5>
-									<div class="col-md-12" style="margin-top: 30px;">
-										<div class="col-md-6">
-											<div class="container">
-												<div class="row">
-													<div class="leftBox">
-														<div class="leftBoxHeader">
-															<div class="headerText">
-																<h4>University: MAKAUT(formerly WBUT)</h4>
-																<span style="text-align: left;"> Course: B.Tech</span>
-																<span style="text-align: right; padding-left: 32px;"> Semester : 1</span>
-															</div>											
-														</div>
-														<hr class="topBar"></hr>
-														<div class="leftBoxMiddle">
-															<div class="middleText">
-																<ul style="float: right;">
-																	<li>Dummi text is one</li>
-																	<li>Dummi text is two</li>
-																</ul>
-																<ul style="float: left">
-																	<li>Dummi text is one</li>
-																	<li>Dummi text is two</li>
-																</ul>
-															</div>
-														</div>
-														<div class="leftBoxFooter" style="background-color: #9ab51f">
-															<span style="text-align: left;">RS. 900</span>
-															<div class="checkbox" style="float: right; margin-top: 0px">
-														    <label>
-														      <input type="checkbox"> Select to Buy
-														    </label>
-															</div>
-														</div>
-													</div>
-												</div>
+					<div class="categories-types">
+						<?php foreach($universities as $university) { 
+							$university_id = $university['id'];
+						  $courses = $db->prepare('SELECT * FROM courses where university_id = :university_id');
+						  $courses->execute(array('university_id' => $university['id']));
+						  $courses = $courses->fetchAll(PDO::FETCH_ASSOC);
+						  if (sizeof($courses) != 0 ) {
+						?>
+							<div class="recent-videos" id="<?php echo $university['name']; ?>">
+								<h5><img src="images/category_images/recent.png" alt="" /><?php echo $university['name']; ?>-videos</h5>
+								<div class="col-md-12" style="margin-top: 30px;">
+									<?php
+									  foreach($courses as $course) {
+										  $categories = $db->prepare('SELECT * FROM categories where course_id = :course_id');
+										  $categories->execute(array('course_id' => $course['id']));
+										  $categories = $categories->fetchAll(PDO::FETCH_ASSOC);
+									?>
+									<div class="col-md-6" style="padding-left: 5px; padding-right: 5px;">
+										<div class="leftBox">
+											<div class="leftBoxHeader">
+												<div class="headerText">
+													<a href="library.php?c_id=<?php echo $course['id']; ?>"><h4>University: <?php echo $university['name']; ?></h4></a>
+													<span style="text-align: left;"> Course: <?php echo $course['name'].'('.$course['stream'].')'; ?></span>
+													<span style="text-align: right; padding-left: 32px;"> Semester : <?php echo $course['sem']; ?></span>
+												</div>											
 											</div>
-										</div>
-										<div class="col-md-6">
-											<div class="container">
-												<div class="row">
-													<div class="leftBox">
-														<div class="leftBoxHeader">
-															<div class="headerText">
-																<h4>University: MAKAUT(formerly WBUT)</h4>
-																<span style="text-align: left;"> Course: B.Tech</span>
-																<span style="text-align: right; padding-left: 32px;"> Semester : 2</span>
-															</div>
-														</div>
-														<hr class="topBar"></hr>
-														<div class="leftBoxMiddle">
-															<div class="middleText">
-																<ul style="float: right;">
-																	<li>Dummi text is one</li>
-																	<li>Dummi text is two</li>
-																</ul>
-																<ul style="float: left">
-																	<li>Dummi text is one</li>
-																	<li>Dummi text is two</li>
-																</ul>
-															</div>
-														</div>
-														<div class="leftBoxFooter" style="background-color: #9ab51f">
-															<span style="text-align: left;">RS. 900</span>
-															<div class="checkbox" style="float: right; margin-top: 0px">
-														    <label>
-														      <input type="checkbox"> Select to Buy
-														    </label>
-															</div>
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="clear"></div>
-								</div>
-									<div class="col-md-12" style="margin-top: 30px;">
-										<div class="col-md-6">
-											<div class="container">
-												<div class="row">
-													<div class="leftBox">
-														<div class="leftBoxHeader">
-															<div class="headerText">
-																<h4>University: MAKAUT(formerly WBUT)</h4>
-																<span style="text-align: left;"> Course: B.Tech</span>
-																<span style="text-align: right; padding-left: 32px;"> Semester : 3</span>
-															</div>
-														</div>
-														<hr class="topBar"></hr>
-														<div class="leftBoxMiddle">
-															<div class="middleText">
-																<ul style="float: right;">
-																	<li>Dummi text is one</li>
-																	<li>Dummi text is two</li>
-																</ul>
-																<ul style="float: left">
-																	<li>Dummi text is one</li>
-																	<li>Dummi text is two</li>
-																</ul>
-																<!-- <hr class="middleBar"></hr> -->
-															</div>
-														</div>
-														<div class="leftBoxFooter" style="background-color: #9ab51f">
-															<span style="text-align: left;">RS. 900</span>
-															<div class="checkbox" style="float: right; margin-top: 0px">
-															    <label>
-															      <input type="checkbox"> Select to Buy
-															    </label>
-															  </div>
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
-										<div class="col-md-6">
-											<div class="container">
-												<div class="row">
-													<div class="leftBox">
-														<div class="leftBoxHeader">
-															<div class="headerText">
-																<h4>University: MAKAUT(formerly WBUT)</h4>
-																<span style="text-align: left;"> Course: B.Tech</span>
-																<span style="text-align: right; padding-left: 32px;"> Semester : 4</span>
-															</div>											
-														</div>
-														<hr class="topBar"></hr>
-														<div class="leftBoxMiddle">
-															<div class="middleText">
-																<ul style="float: right;">
-																	<li>Dummi text is one</li>
-																	<li>Dummi text is two</li>
-																</ul>
-																<ul style="float: left">
-																	<li>Dummi text is one</li>
-																	<li>Dummi text is two</li>
-																</ul>
-																<!-- <hr class="middleBar"></hr> -->
-															</div>
-														</div>
-														<div class="leftBoxFooter" style="background-color: #9ab51f">
-															<span style="text-align: left;">RS. 900</span>
-															<div class="checkbox" style="float: right; margin-top: 0px">
-															    <label>
-															      <input type="checkbox"> Select to Buy
-															    </label>
-															  </div>
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-										<div class="clear"> </div>
-									</div>
-								</div>
-								<div class="recent-videos" id="iim" style="display: none;">
-									<h5><img src="images/category_images/recent.png" alt="" />IIM-videos</h5>
-									<div class="grids grids2">
-									<div class="grid grid2">
-										<h3>Consectetur adipisicing elit</h3>
-										<a href="#"><img src="images/category_images/g1 copy.png" title="video-name"></a>
-										<div class="time">
-											<span>00:10</span>
-										</div>
-										<div class="grid-info">
-											<div class="video-share">
-												<ul>
-													<li><a href="#"><img src="images/category_images/likes.png" title="links"></a></li>
-													<li><a href="#"><img src="images/category_images/link.png" title="Link"></a></li>
-													<li><a href="#"><img src="images/category_images/views.png" title="Views"></a></li>
-												</ul>
-											</div>
-											<div class="video-watch">
-												<a href="single.html">Watch Now</a>
-											</div>
-											<div class="clear"> </div>
-											<div class="lables">
-												<p>Labels:<a href="#">Lorem</a></p>
-											</div>
-										</div>
-									</div>
-									<div class="grid grid2">
-										<h3>Consectetur adipisicing elit</h3>
-										<a href="single.html"><img src="images/category_images/g2 copy.png" title="video-name"></a>
-										<div class="time">
-											<span>2:10</span>
-										</div>
-										<div class="grid-info">
-											<div class="video-share">
-												<ul>
-													<li><a href="#"><img src="images/category_images/likes.png" title="links"></a></li>
-													<li><a href="#"><img src="images/category_images/link.png" title="Link"></a></li>
-													<li><a href="#"><img src="images/category_images/views.png" title="Views"></a></li>
-												</ul>
-											</div>
-											<div class="video-watch">
-												<a href="single.html">Watch Now</a>
-											</div>
-											<div class="clear"> </div>
-											<div class="lables">
-												<p>Labels:<a href="#">Lorem</a></p>
-											</div>
-										</div>
-									</div>
-									<div class="grid grid2">
-										<h3>Consectetur adipisicing elit</h3>
-										<a href="single.html"><img src="images/category_images/g4.jpg" title="video-name"></a>
-										<div class="time">
-											<span>10:10</span>
-										</div>
-										<div class="grid-info">
-											<div class="video-share">
-												<ul>
-													<li><a href="#"><img src="images/category_images/likes.png" title="links"></a></li>
-													<li><a href="#"><img src="images/category_images/link.png" title="Link"></a></li>
-													<li><a href="#"><img src="images/category_images/views.png" title="Views"></a></li>
-												</ul>
-											</div>
-											<div class="video-watch">
-												<a href="single.html">Watch Now</a>
-											</div>
-											<div class="clear"> </div>
-											<div class="lables">
-												<p>Labels:<a href="#">Lorem</a></p>
-											</div>
-										</div>
-									</div>
-									<div class="clear"> </div>
-									</div>
-									<div class="grids grids2">
-										<div class="grid grid2">
-											<h3>Consectetur adipisicing elit</h3>
-											<a href="single.html"><img src="images/category_images/g1 copy.png" title="video-name"></a>
-											<div class="time">
-												<span>00:10</span>
-											</div>
-											<div class="grid-info">
-												<div class="video-share">
+											<hr class="topBar"></hr>
+											<div class="leftBoxMiddle">
+												<div class="middleText">
+<!-- 													<ul style="float: right; width:50%">
+														<li>Dummi text is one</li>
+														<li>Dummi text is two</li>
+													</ul>
+													<ul style="float: left; width:50%">
+														<li>Dummi text is one</li>
+														<li>Dummi text is two</li>
+													</ul> -->
 													<ul>
-														<li><a href="#"><img src="images/category_images/likes.png" title="links"></a></li>
-														<li><a href="#"><img src="images/category_images/link.png" title="Link"></a></li>
-														<li><a href="#"><img src="images/category_images/views.png" title="Views"></a></li>
+														<li>Joy of Engineering</li>
+														<?php foreach($categories as $category) { ?>
+															<li><?php echo $category['name']; ?></li>
+														<?php } ?>
 													</ul>
 												</div>
-												<div class="video-watch">
-													<a href="single.html">Watch Now</a>
-												</div>
-												<div class="clear"> </div>
-												<div class="lables">
-													<p>Labels:<a href="#">Lorem</a></p>
+											</div>
+											<div class="leftBoxFooter" style="background-color: #9ab51f">
+												<span style="text-align: left;">RS. <?php echo $course['price']; ?></span>
+												<div class="checkbox" style="float: right; margin-top: 0px">
+											    <label>
+											      <input type="checkbox"> Select to Buy
+											    </label>
 												</div>
 											</div>
 										</div>
-										<div class="grid grid2">
-											<h3>Consectetur adipisicing elit</h3>
-											<a href="single.html"><img src="images/category_images/g2 copy.png" title="video-name"></a>
-											<div class="time">
-												<span>2:10</span>
-											</div>
-											<div class="grid-info">
-												<div class="video-share">
-													<ul>
-														<li><a href="#"><img src="images/category_images/likes.png" title="links"></a></li>
-														<li><a href="#"><img src="images/category_images/link.png" title="Link"></a></li>
-														<li><a href="#"><img src="images/category_images/views.png" title="Views"></a></li>
-													</ul>
-												</div>
-												<div class="video-watch">
-													<a href="single.html">Watch Now</a>
-												</div>
-												<div class="clear"> </div>
-												<div class="lables">
-													<p>Labels:<a href="#">Lorem</a></p>
-												</div>
-											</div>
-										</div>
-										<div class="grid grid2">
-											<h3>Consectetur adipisicing elit</h3>
-											<a href="single.html"><img src="images/category_images/g4.jpg" title="video-name"></a>
-											<div class="time">
-												<span>10:10</span>
-											</div>
-											<div class="grid-info">
-												<div class="video-share">
-													<ul>
-														<li><a href="#"><img src="images/category_images/likes.png" title="links"></a></li>
-														<li><a href="#"><img src="images/category_images/link.png" title="Link"></a></li>
-														<li><a href="#"><img src="images/category_images/views.png" title="Views"></a></li>
-													</ul>
-												</div>
-												<div class="video-watch">
-													<a href="single.html">Watch Now</a>
-												</div>
-												<div class="clear"> </div>
-												<div class="lables">
-													<p>Labels:<a href="#">Lorem</a></p>
-												</div>
-											</div>
-										</div>
-										<div class="clear"> </div>
 									</div>
+									<?php } ?>
 								</div>
+								<div class="clear"></div>
 							</div>
-						</div>
+						<?php } } ?>
 					</div>
 				</div>	
 			</div>
 		</div>
 	</div>
-
-	<section id="menu9" class="menu9-section">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-12 smap text-center">
-          <div class="simg col-md-3">
-            <a href="#page-top"><img class="smimg" src="images/knowledge_png.png" ></a>
-          </div>
-          <div class="smtop col-md-3">
-            <h5 style=" color: white">COMPANY<br></h5><a class="sbm" href="index1.html#submenu6">Mission</a><br><a class="sbm" href="index1.html#submenu4">About us</a><br> <a class="sbm" href="index1.html#submenu8">Work with us</a>     
-          </div>
-          <div class="smmid col-md-3">
-            <h5 style=" color: white">SUPPORT<br></h5><a class="sbm" href="#">Reach a Teacher</a><br><a class="sbm" href="#contact">Contact us</a><br>
-          </div>
-          <div class="smbot col-md-3">
-            <h5 style=" color: white">GET READY<br></h5><a class="sbm" href="#submenu">Learning App</a><br><a class="sbm" href="#menu2">Training Lab</a><br>
-          </div>
-        </div>
-      </div>
-  	</div>
-	</section>
-
-  <?php include('includes/footer.php'); ?>
+	<?php include('includes/top-footer.php'); ?>
+	<?php include('includes/footer.php'); ?>
