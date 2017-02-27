@@ -1,0 +1,617 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="5b290a87-74f5-4a5a-91de-ba43d905b08e" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/11_Search-256.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/2787035531_066ba1ee85.jpeg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/90.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Cc.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Chemistry I.zip" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Chemistry I/Chemical Thermodynamics/1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Chemistry I/Chemical Thermodynamics/10.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Chemistry I/Chemical Thermodynamics/11.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Chemistry I/Chemical Thermodynamics/12.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Chemistry I/Chemical Thermodynamics/13.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Chemistry I/Chemical Thermodynamics/14.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Chemistry I/Chemical Thermodynamics/15.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Chemistry I/Chemical Thermodynamics/16.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Chemistry I/Chemical Thermodynamics/17.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Chemistry I/Chemical Thermodynamics/18.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Chemistry I/Chemical Thermodynamics/19.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Chemistry I/Chemical Thermodynamics/2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Chemistry I/Chemical Thermodynamics/20.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Chemistry I/Chemical Thermodynamics/21.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Chemistry I/Chemical Thermodynamics/22.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Chemistry I/Chemical Thermodynamics/23.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Chemistry I/Chemical Thermodynamics/3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Chemistry I/Chemical Thermodynamics/4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Chemistry I/Chemical Thermodynamics/5.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Chemistry I/Chemical Thermodynamics/6.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Chemistry I/Chemical Thermodynamics/7.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Chemistry I/Chemical Thermodynamics/8.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Chemistry I/Chemical Thermodynamics/9.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Chemistry I/Chemical Thermodynamics/Thumbs.db" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Chemistry I/Electrochemistry/1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Chemistry I/Electrochemistry/10.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Chemistry I/Electrochemistry/11.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Chemistry I/Electrochemistry/12.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Chemistry I/Electrochemistry/13.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Chemistry I/Electrochemistry/14.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Chemistry I/Electrochemistry/15.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Chemistry I/Electrochemistry/16.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Chemistry I/Electrochemistry/17.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Chemistry I/Electrochemistry/18.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Chemistry I/Electrochemistry/2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Chemistry I/Electrochemistry/3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Chemistry I/Electrochemistry/4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Chemistry I/Electrochemistry/5.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Chemistry I/Electrochemistry/6.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Chemistry I/Electrochemistry/7.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Chemistry I/Electrochemistry/8.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Chemistry I/Electrochemistry/9.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Chemistry I/Electrochemistry/Thumbs.db" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Chemistry I/Industrial Chemistry/1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Chemistry I/Industrial Chemistry/2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Chemistry I/Industrial Chemistry/3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Chemistry I/Industrial Chemistry/4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Chemistry I/Industrial Chemistry/5.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Chemistry I/Industrial Chemistry/6.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Chemistry I/Industrial Chemistry/Thumbs.db" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Chemistry I/Lab/1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Chemistry I/Lab/10.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Chemistry I/Lab/11.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Chemistry I/Lab/2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Chemistry I/Lab/3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Chemistry I/Lab/4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Chemistry I/Lab/5.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Chemistry I/Lab/6.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Chemistry I/Lab/7.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Chemistry I/Lab/8.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Chemistry I/Lab/9.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Chemistry I/Lab/Thumbs.db" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Chemistry I/Polymerization/1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Chemistry I/Polymerization/10.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Chemistry I/Polymerization/11.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Chemistry I/Polymerization/2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Chemistry I/Polymerization/3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Chemistry I/Polymerization/4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Chemistry I/Polymerization/5.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Chemistry I/Polymerization/6.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Chemistry I/Polymerization/7.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Chemistry I/Polymerization/8.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Chemistry I/Polymerization/9.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Chemistry I/Polymerization/Thumbs.db" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Chemistry I/Reaction Dynamics/1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Chemistry I/Reaction Dynamics/10.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Chemistry I/Reaction Dynamics/2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Chemistry I/Reaction Dynamics/3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Chemistry I/Reaction Dynamics/4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Chemistry I/Reaction Dynamics/5.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Chemistry I/Reaction Dynamics/6.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Chemistry I/Reaction Dynamics/7.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Chemistry I/Reaction Dynamics/8.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Chemistry I/Reaction Dynamics/9.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Chemistry I/Solid State Chemistry/1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Chemistry I/Solid State Chemistry/2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Chemistry I/Solid State Chemistry/3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Chemistry I/Solid State Chemistry/4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Chemistry I/Solid State Chemistry/5.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Chemistry I/Solid State Chemistry/6.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Chemistry I/Structure and Reactivity of Organic Molecule/1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Chemistry I/Structure and Reactivity of Organic Molecule/10.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Chemistry I/Structure and Reactivity of Organic Molecule/11.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Chemistry I/Structure and Reactivity of Organic Molecule/12.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Chemistry I/Structure and Reactivity of Organic Molecule/2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Chemistry I/Structure and Reactivity of Organic Molecule/3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Chemistry I/Structure and Reactivity of Organic Molecule/4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Chemistry I/Structure and Reactivity of Organic Molecule/5.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Chemistry I/Structure and Reactivity of Organic Molecule/6.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Chemistry I/Structure and Reactivity of Organic Molecule/7.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Chemistry I/Structure and Reactivity of Organic Molecule/8.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Chemistry I/Structure and Reactivity of Organic Molecule/9.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Choose_Video_blue.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Choose_Video_green.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Close_Search.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Computer Science.zip" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Computer Science/Arrays and Pointers/1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Computer Science/Arrays and Pointers/10.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Computer Science/Arrays and Pointers/11.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Computer Science/Arrays and Pointers/12.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Computer Science/Arrays and Pointers/13.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Computer Science/Arrays and Pointers/14.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Computer Science/Arrays and Pointers/15.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Computer Science/Arrays and Pointers/16.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Computer Science/Arrays and Pointers/17.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Computer Science/Arrays and Pointers/18.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Computer Science/Arrays and Pointers/19.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Computer Science/Arrays and Pointers/2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Computer Science/Arrays and Pointers/3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Computer Science/Arrays and Pointers/4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Computer Science/Arrays and Pointers/5.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Computer Science/Arrays and Pointers/6.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Computer Science/Arrays and Pointers/7.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Computer Science/Arrays and Pointers/8.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Computer Science/Arrays and Pointers/9.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Computer Science/Arrays and Pointers/Thumbs.db" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Computer Science/C Fundamentals/1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Computer Science/C Fundamentals/2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Computer Science/C Fundamentals/3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Computer Science/C Fundamentals/4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Computer Science/C Fundamentals/5.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Computer Science/C Fundamentals/6.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Computer Science/C Fundamentals/7.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Computer Science/C Fundamentals/Thumbs.db" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Computer Science/Flow of Control/1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Computer Science/Flow of Control/2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Computer Science/Flow of Control/3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Computer Science/Flow of Control/4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Computer Science/Flow of Control/5.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Computer Science/Flow of Control/6.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Computer Science/Flow of Control/7.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Computer Science/Flow of Control/Thumbs.db" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Computer Science/Fundamentals and Program Structures/1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Computer Science/Fundamentals and Program Structures/2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Computer Science/Fundamentals and Program Structures/3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Computer Science/Fundamentals and Program Structures/Thumbs.db" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Computer Science/Fundamentals of Computer/1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Computer Science/Fundamentals of Computer/2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Computer Science/Fundamentals of Computer/3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Computer Science/Fundamentals of Computer/4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Computer Science/Fundamentals of Computer/5.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Computer Science/Fundamentals of Computer/6.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Computer Science/Fundamentals of Computer/7.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Computer Science/Fundamentals of Computer/Thumbs.db" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Computer Science/Operators &amp; Expressions/1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Computer Science/Operators &amp; Expressions/2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Computer Science/Operators &amp; Expressions/3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Computer Science/Operators &amp; Expressions/4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Computer Science/Operators &amp; Expressions/5.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Computer Science/Operators &amp; Expressions/Thumbs.db" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Computer Science/Structures Union and Files/1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Computer Science/Structures Union and Files/2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Computer Science/Structures Union and Files/3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Computer Science/Structures Union and Files/4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Computer Science/Structures Union and Files/Thumbs.db" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Electrical.zip" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Electrical/3 Phase Induction Motor/1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Electrical/3 Phase Induction Motor/10.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Electrical/3 Phase Induction Motor/11.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Electrical/3 Phase Induction Motor/12.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Electrical/3 Phase Induction Motor/13.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Electrical/3 Phase Induction Motor/14.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Electrical/3 Phase Induction Motor/15.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Electrical/3 Phase Induction Motor/16.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Electrical/3 Phase Induction Motor/2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Electrical/3 Phase Induction Motor/3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Electrical/3 Phase Induction Motor/4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Electrical/3 Phase Induction Motor/5.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Electrical/3 Phase Induction Motor/6.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Electrical/3 Phase Induction Motor/7.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Electrical/3 Phase Induction Motor/8.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Electrical/3 Phase Induction Motor/9.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Electrical/3 Phase System/1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Electrical/3 Phase System/2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Electrical/3 Phase System/3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Electrical/3 Phase System/4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Electrical/3 Phase System/5.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Electrical/3 Phase System/6.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Electrical/DC Machine/1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Electrical/DC Machine/10.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Electrical/DC Machine/11.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Electrical/DC Machine/12.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Electrical/DC Machine/2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Electrical/DC Machine/3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Electrical/DC Machine/4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Electrical/DC Machine/5.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Electrical/DC Machine/6.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Electrical/DC Machine/7.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Electrical/DC Machine/8.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Electrical/DC Machine/9.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Electrical/Electrostatics/1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Electrical/Electrostatics/10.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Electrical/Electrostatics/11.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Electrical/Electrostatics/12.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Electrical/Electrostatics/13.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Electrical/Electrostatics/14.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Electrical/Electrostatics/2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Electrical/Electrostatics/3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Electrical/Electrostatics/4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Electrical/Electrostatics/5.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Electrical/Electrostatics/6.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Electrical/Electrostatics/7.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Electrical/Electrostatics/8.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Electrical/Electrostatics/9.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Electrical/Lab Assignment/1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Electrical/Lab Assignment/2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Electrical/Lab Assignment/3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Electrical/Single Phase Transformer/1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Electrical/Single Phase Transformer/10.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Electrical/Single Phase Transformer/11.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Electrical/Single Phase Transformer/12.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Electrical/Single Phase Transformer/13.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Electrical/Single Phase Transformer/14.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Electrical/Single Phase Transformer/15.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Electrical/Single Phase Transformer/16.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Electrical/Single Phase Transformer/17.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Electrical/Single Phase Transformer/2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Electrical/Single Phase Transformer/3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Electrical/Single Phase Transformer/4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Electrical/Single Phase Transformer/5.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Electrical/Single Phase Transformer/6.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Electrical/Single Phase Transformer/7.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Electrical/Single Phase Transformer/8.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Electrical/Single Phase Transformer/9.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Electronics.zip" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Electronics/Amplifiers/1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Electronics/Amplifiers/2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Electronics/Amplifiers/3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Electronics/Amplifiers/4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Electronics/Amplifiers/5.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Electronics/Digital Electronics/1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Electronics/Digital Electronics/2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Electronics/Digital Electronics/3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Electronics/Digital Electronics/4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Electronics/Digital Electronics/5.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Electronics/Digital Electronics/6.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Electronics/Digital Electronics/7.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Electronics/Field Effect Transistors/1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Electronics/Field Effect Transistors/2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Electronics/Field Effect Transistors/3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Electronics/Field Effect Transistors/4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Electronics/Field Effect Transistors/5.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Electronics/Field Effect Transistors/6.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Electronics/Field Effect Transistors/7.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Electronics/Lab Assignment/1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Electronics/Lab Assignment/2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Electronics/Lab Assignment/3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Electronics/Lab Assignment/4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Electronics/Lab Assignment/5.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Electronics/Lab Assignment/6.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/KL_ Symbol 180.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/KL_ SymbolBlue.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Knowledgelab_Oval.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Knowledgelab_logo.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Mathematics II.zip" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Mathematics II/First Order and First Degree/1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Mathematics II/First Order and First Degree/10.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Mathematics II/First Order and First Degree/11.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Mathematics II/First Order and First Degree/12.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Mathematics II/First Order and First Degree/13.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Mathematics II/First Order and First Degree/14.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Mathematics II/First Order and First Degree/15.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Mathematics II/First Order and First Degree/16.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Mathematics II/First Order and First Degree/17.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Mathematics II/First Order and First Degree/18.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Mathematics II/First Order and First Degree/19.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Mathematics II/First Order and First Degree/2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Mathematics II/First Order and First Degree/20.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Mathematics II/First Order and First Degree/21.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Mathematics II/First Order and First Degree/22.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Mathematics II/First Order and First Degree/23.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Mathematics II/First Order and First Degree/24.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Mathematics II/First Order and First Degree/25.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Mathematics II/First Order and First Degree/26.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Mathematics II/First Order and First Degree/27.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Mathematics II/First Order and First Degree/28.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Mathematics II/First Order and First Degree/29.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Mathematics II/First Order and First Degree/3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Mathematics II/First Order and First Degree/30.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Mathematics II/First Order and First Degree/31.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Mathematics II/First Order and First Degree/32.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Mathematics II/First Order and First Degree/33.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Mathematics II/First Order and First Degree/4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Mathematics II/First Order and First Degree/5.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Mathematics II/First Order and First Degree/6.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Mathematics II/First Order and First Degree/7.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Mathematics II/First Order and First Degree/8.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Mathematics II/First Order and First Degree/9.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Mathematics II/Foundation/1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Mathematics II/Foundation/2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Mathematics II/Graph Theory/1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Mathematics II/Graph Theory/2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Mathematics II/Graph Theory/3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Mathematics II/Graph Theory/4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Mathematics II/Graph Theory/5.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Mathematics II/Graph Theory/6.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Mathematics II/Graph Theory/7.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Mathematics II/Higher Order and First Degree/1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Mathematics II/Higher Order and First Degree/10.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Mathematics II/Higher Order and First Degree/11.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Mathematics II/Higher Order and First Degree/12.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Mathematics II/Higher Order and First Degree/13.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Mathematics II/Higher Order and First Degree/14.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Mathematics II/Higher Order and First Degree/15.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Mathematics II/Higher Order and First Degree/2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Mathematics II/Higher Order and First Degree/3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Mathematics II/Higher Order and First Degree/4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Mathematics II/Higher Order and First Degree/5.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Mathematics II/Higher Order and First Degree/6.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Mathematics II/Higher Order and First Degree/7.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Mathematics II/Higher Order and First Degree/8.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Mathematics II/Higher Order and First Degree/9.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Mathematics II/Improper Integral/1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Mathematics II/Improper Integral/2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Mathematics II/Improper Integral/3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Mathematics II/Improper Integral/4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Mathematics II/Improper Integral/5.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Mathematics II/Improper Integral/6.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Mathematics II/Improper Integral/7.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Mathematics II/Improper Integral/8.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Mathematics II/Improper Integral/9.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Mathematics II/Laplace Transform/1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Mathematics II/Laplace Transform/2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Mathematics II/Laplace Transform/3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Mathematics II/Laplace Transform/4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Mathematics II/Laplace Transform/5.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Mathematics II/Laplace Transform/6.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Mathematics II/Laplace Transform/7.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Mathematics II/Laplace Transform/8.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Mathematics II/Laplace Transform/9.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Mathematics II/Tree/1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Mathematics II/Tree/2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Mathematics II/Tree/3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Mathematics II/Tree/4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Mathematics II/Tree/5.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Mathematics II/Tree/6.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Mathematics II/Tree/7.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Navigation.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Notes_blue.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Notes_green.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Overview_blue.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Overview_green.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/PageNo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Physics I.zip" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Physics I/Crystallography/1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Physics I/Crystallography/10.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Physics I/Crystallography/11.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Physics I/Crystallography/12.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Physics I/Crystallography/13.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Physics I/Crystallography/2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Physics I/Crystallography/3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Physics I/Crystallography/4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Physics I/Crystallography/5.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Physics I/Crystallography/6.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Physics I/Crystallography/7.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Physics I/Crystallography/8.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Physics I/Crystallography/9.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Physics I/Crystallography/Thumbs.db" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Physics I/Lab/1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Physics I/Lab/2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Physics I/Lab/3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Physics I/Lab/4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Physics I/Lab/5.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Physics I/Lab/6.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Physics I/Lab/7.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Physics I/Lab/8.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Physics I/Lab/Thumbs.db" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Physics I/Optics I/1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Physics I/Optics I/10.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Physics I/Optics I/11.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Physics I/Optics I/12.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Physics I/Optics I/13.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Physics I/Optics I/14.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Physics I/Optics I/2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Physics I/Optics I/3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Physics I/Optics I/4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Physics I/Optics I/5.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Physics I/Optics I/6.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Physics I/Optics I/7.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Physics I/Optics I/8.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Physics I/Optics I/9.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Physics I/Optics I/Thumbs.db" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Physics I/Optics II/1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Physics I/Optics II/10.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Physics I/Optics II/11.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Physics I/Optics II/12.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Physics I/Optics II/13.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Physics I/Optics II/14.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Physics I/Optics II/15.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Physics I/Optics II/16.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Physics I/Optics II/17.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Physics I/Optics II/18.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Physics I/Optics II/19.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Physics I/Optics II/2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Physics I/Optics II/3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Physics I/Optics II/4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Physics I/Optics II/5.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Physics I/Optics II/6.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Physics I/Optics II/7.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Physics I/Optics II/8.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Physics I/Optics II/9.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Physics I/Optics II/Thumbs.db" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Physics I/Oscillation/1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Physics I/Oscillation/2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Physics I/Oscillation/3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Physics I/Oscillation/4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Physics I/Oscillation/5.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Physics I/Oscillation/Thumbs.db" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Physics I/Quantum Physics/1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Physics I/Quantum Physics/10.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Physics I/Quantum Physics/11.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Physics I/Quantum Physics/12.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Physics I/Quantum Physics/2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Physics I/Quantum Physics/3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Physics I/Quantum Physics/4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Physics I/Quantum Physics/5.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Physics I/Quantum Physics/6.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Physics I/Quantum Physics/7.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Physics I/Quantum Physics/8.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Physics I/Quantum Physics/9.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Physics I/Quantum Physics/Thumbs.db" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Python_tutorial.pdf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/QuestionBank_Blue.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/QuestionBank_green.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/References_blue.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/References_green.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Semester_Question_blue.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Semester_Question_green.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Semester_book.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Syllabus_blue.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Syllabus_green.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Teerthankar.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Transcript_blue.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Transcript_green.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/University.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/VideoImage1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Video_blue.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/Video_green.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/afd-101055.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/back.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/backToTop.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/blue_band.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/cancel.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/close_button.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/down.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/freeTrial.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/freeTrial_Orange.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/free_trial.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/green_band.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/green_circle.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/home.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/home_overview.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/minus.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/next.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/ok.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/pause.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/play.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/play_100-80.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/plus.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/prev.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/screen_landing2line.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/scroll_circle.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/stop.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/terms of use.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/up.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/videoIcon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/volume.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/xlogo_knowledgelab.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/zoomminus_overview.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/zoomplus_overview.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/sidebar-menu.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/includes/library-header.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/includes/library-sidebar.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/sidebar-menu.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/library.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/categories.php" afterPath="$PROJECT_DIR$/categories.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/customCategoryStyle.css" afterPath="$PROJECT_DIR$/css/customCategoryStyle.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/includes/classes/user.php" afterPath="$PROJECT_DIR$/includes/classes/user.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/includes/login_reg_modal.php" afterPath="$PROJECT_DIR$/includes/login_reg_modal.php" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="76" />
+    <option name="y" value="72" />
+    <option name="width" value="1281" />
+    <option name="height" value="704" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="klab" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="klab" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path" value="/usr/bin/node" />
+    <property name="js.eslint.eslintPackage" value="" />
+    <property name="js-jscs-nodeInterpreter" value="/usr/bin/node" />
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5b290a87-74f5-4a5a-91de-ba43d905b08e" name="Default" comment="" />
+      <created>1488221559297</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1488221559297</updated>
+      <workItem from="1488221563699" duration="47000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="47000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="76" y="72" width="1281" height="704" extended-state="0" />
+    <editor active="false" />
+    <layout>
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24980484" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="processedProjectFiles" value="true" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+</project>
