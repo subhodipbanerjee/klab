@@ -7,8 +7,20 @@
     $("#page-top").css("padding-right","0px;");
   });
 </script>
+<style type="text/css">
+
+.alert {
+  border: 1px solid transparent;
+  border-radius: 4px;
+  margin-bottom: 0;
+  margin-left: 25%;
+  margin-top: 10px;
+  padding: 15px;
+  position: fixed;
+}  
+
+</style>
 <?php
-// require('includes/config.php');
 if(isset($_POST['registration'])) {
   if(strlen($_POST['username']) < 3) {
     $error[] = 'Username is too short.';
@@ -34,6 +46,24 @@ if(isset($_POST['registration'])) {
       $error[] = 'Email provided is already in use.';
     }
   }
+
+  if (strlen($_POST['mobile_no']) < 10 || strlen($_POST['mobile_no']) > 10) {
+    $error[] = 'Invalid phone number';
+  } else {
+    $stmt = $db->prepare('SELECT mobile_no FROM members WHERE mobile_no = :mobile_no');
+    $stmt->execute(array(':mobile_no' => $_POST['mobile_no']));
+    $row = $stmt->fetch(PDO::FETCH_ASSOC);
+    if(!empty($row['mobile_no'])) {
+      $error[] = 'Mobile provided is already in use.';
+    }
+  }
+
+  echo '<div class="alert alert-danger" role="alert"><ul>';
+    foreach ($error as $e) {
+      echo '<li>'.$e.'</li>';
+    }
+  echo '</ul></div>';
+  
   //if no errors have been created carry on
   if(!isset($error)) {
     $hashedpassword = $user->password_hash($_POST['password'], PASSWORD_BCRYPT);
@@ -55,15 +85,6 @@ if(isset($_POST['registration'])) {
         ':year' => $_POST['year']
       ));
       $id = $db->lastInsertId('memberID');
-      // $to = $_POST['email'];
-      // $subject = "Registration Confirmation";
-      // $body = "<p>Thank you for registering at demo site.</p>
-      // <p>To activate your account, please click on this link: <a href='".DIR."activate.php?x=$id&y=$activasion'>".DIR."activate.php?x=$id&y=$activasion</a></p>
-      // <p>Regards Site Admin</p>";
-      // $headers = "MIME-Version: 1.0" . "\r\n";
-      // $headers .= "Content-type:text/html;charset=iso-8859-1" . "\r\n";
-      // $headers .= 'From: <noreply@knowledgelab.co.in>' . "\r\n";
-
       $to = $_POST['email'];
       $subject = "Registration Confirmation";
       $headers = "From: noreply@knowledgelab.co.in\r\n";
@@ -78,7 +99,8 @@ if(isset($_POST['registration'])) {
       exit;
     } catch(PDOException $e) {
       $error[] = $e->getMessage();
-      print_r($error);
+      // print_r($error);
+      echo '<div class="alert alert-danger" role="alert">'.$error.'</div>';
     }
   }
 }
@@ -87,11 +109,12 @@ if(isset($_POST['login'])){
   $username = $_POST['username'];
   $password = $_POST['password'];
   if($user->login($username,$password)){ 
-    $_SESSION['username'] = $username;
+    // $_SESSION['username'] = $username;
     header('Location: categories.php');
     exit;
   } else {
-    $error[] = 'Wrong username or password or your account has not been activated.';
+    $error = 'Wrong username or password or your account has not been activated.';
+    echo '<div class="alert alert-danger" role="alert">'.$error.'</div>';
   }
 }
 
@@ -123,12 +146,12 @@ if(isset($_POST['login'])){
         <form id="login-form" method="post" action="" autocomplete="off" name="login">
           <div class="modal-body">
             <div class="fblogin"><a class="fbloginBtn" onclick="">Login with facebook account</a></div>
-            <div class="knowledgelablogin"><span style="padding-left: 10px; text-align: center;"> --Or Login With knowledgelab Account--</span></div>
-            <!-- <div id="div-login-msg">
+            <div class="knowledgelablogin"><span style="padding-left: 10px;"> --Or Login With knowledgelab Account--</span></div>
+            <div id="div-login-msg">
               <div id="icon-login-msg" class="glyphicon glyphicon-chevron-right"></div>
               <span id="text-login-msg">Type your username and password.</span>
-            </div> -->
-            <input id="login_username" name="username" class="form-control" type="text" placeholder="Username" required>
+            </div>
+            <input id="login_username" name="username" class="form-control" type="text" placeholder="Email ID / Mobile number" required>
             <input id="login_password" name="password" class="form-control" type="password" placeholder="Password" required>
             <div class="checkbox">
               <label>
@@ -172,11 +195,11 @@ if(isset($_POST['login'])){
         <form id="register-form" style="display:none;">
           <div class="modal-body">
             <div class="fblogin"><a class="fbloginBtn" onclick="">Login with facebook account</a></div>
-            <div class="knowledgelablogin"><span style="padding-left: 10px;"> --Or fill the form--</span></div>
-            <!-- <div id="div-register-msg">
+            <div class="knowledgelablogin"><span style="padding-left: 10px;"> --Or Login With knowledgelab Account--</span></div>
+            <div id="div-register-msg">
               <div id="icon-register-msg" class="glyphicon glyphicon-chevron-right"></div>
               <span id="text-register-msg">Register an account.</span>
-            </div> -->
+            </div>
             <input id="register_username" class="form-control" type="text" placeholder="Username (type ERROR for error effect)" required>
             <input id="register_email" class="form-control" type="text" placeholder="E-Mail" required>
             <input id="register_password" class="form-control" type="password" placeholder="Password" required>
@@ -225,23 +248,21 @@ if(isset($_POST['login'])){
         <form id="register-form" role="form" method="post" action="" autocomplete="off" name="registration">
           <div class="modal-body">
             <div class="fblogin"><a class="fbloginBtn" onclick="">Login with facebook account</a></div>
-            <div class="knowledgelablogin"> <span style="padding-left: 10px;"> --Or fill the form--</span></div>
-            <!-- <div id="div-register-msg">
+            <div class="knowledgelablogin"> <span style="padding-left: 10px;"> --Or Login With knowledgelab Account--</span></div>
+            <div id="div-register-msg">
               <div id="icon-register-msg" class="glyphicon glyphicon-chevron-right"></div>
               <span id="text-register-msg">Register an account.</span>
-            </div> -->
-            <input id="register_username" name="username" class="form-control" type="text" placeholder="Full Name" required>
-            <input id="register_email" name="email" class="form-control" type="text" placeholder="EMail" required>
-            <input id="register_mobileNo" name="mobile_no" class="form-control" type="Mobile" placeholder="Mobile No." required>
-           <input id="register_password" name="password" class="form-control" type="password" placeholder="Password" required>
-            
+            </div>
+            <input id="register_username" name="username" class="form-control" type="text" placeholder="Username" required>
+            <input id="register_email" name="email" class="form-control" type="text" placeholder="E-Mail" required>
+            <input id="register_password" name="password" class="form-control" type="password" placeholder="Password" required>
+            <input id="register_mobileNo" name="mobile_no" class="form-control" type="Mobile" placeholder="Mobile no." required>
             <textarea class="form-control" name="address" rows="1" id="address" type="address" placeholder="Address"></textarea>
-            <div class="col-md-6" style="padding-bottom: 8px; padding-left: 0px; padding-right: 5px;"><input id="register_city" name="city" class="form-control" type="text" placeholder="City" required></div>
-            <div class="col-md-6" style="padding-bottom: 8px; padding-left: 0px; padding-right: 0px;"><input id="register_pincode" name="pincode" class="form-control" type="pincode" placeholder="Pincode" required></div>
-            <input id="register_college" name="college" class="form-control" type="text" placeholder="College" required>
-            <div class="col-md-6" style="padding-bottom: 8px; padding-left: 0px; padding-right: 5px;">
-              <select id="country" class="form-control" name="stream" type="text" placeholder="Stream">
-                <option>stream</option>
+            <div class="col-md-6" style="padding-bottom: 5px; padding-left: 0px; padding-right: 5px;"><input id="register_city" name="city" class="form-control" type="text" placeholder="City" required></div>
+            <div class="col-md-6" style="padding-bottom: 5px; padding-left: 0px; padding-right: 0px;"><input id="register_pincode" name="pincode" class="form-control" type="pincode" placeholder="Pincode" required></div>
+            <div class="col-md-6" style="padding-bottom: 5px; padding-left: 0px; padding-right: 5px;">
+              <select id="country" class="form-control" name="stream" type="Mobile" placeholder="Stream">
+                <option>stream 1</option>
                 <option>stream 2</option>
                 <option>stream 3</option>
                 <option>stream 4</option>
@@ -251,24 +272,16 @@ if(isset($_POST['login'])){
                 <option>stream 8</option>
               </select>
             </div>
-            <div class="col-md-6" style="padding-bottom: 8px; padding-left: 0px; padding-right: 5px; padding-top: 5px;">
-              <select id="register_year" class="form-control" name="year" type="text" placeholder="Year">
-                <option>Year</option>
-                <option>2017</option>
-                <option>2016</option>
-                <option>2015</option>
-                <option>2014</option>
-                <option>2013</option>
-                <option>2012</option>
-                <option>2011</option>
-                <option>2010</option>
-              </select>
+            <div class="col-md-6" style="padding-bottom: 5px; padding-left: 0px; padding-right: 0px;">
+              <input id="register_year" name="year" class="form-control" type="text" placeholder="Year" required>
             </div>
-          <div class="modal-footer col-md-12" style="padding-right: 0px; padding-left: 0px;">
-            <div class="col-md-6"  style="padding-right: 5px; padding-left: 0px;">
-              <button type="submit" class="btn btn-primary btn-lg btn-block col-md-6" style="font-size: 14px;" name="registration">FREE TRAIL</button>
+            <input id="register_college" name="college" class="form-control" type="text" placeholder="College Name" required>
+          </div>
+          <div class="modal-footer">
+            <div class="col-md-7"  style="padding: 6px">
+              <button type="submit" class="btn btn-primary btn-lg btn-block col-md-6" style="font-size: 14px;" name="registration">GO TO FREE TRAIL</button>
             </div>
-            <div class="col-md-6"  style="padding-left: 5px; padding-right: 0px;">
+            <div class="col-md-5"  style="padding: 6px">
               <button type="submit" class="btn btn-primary btn-lg btn-block col-md-6" style="font-size: 14px;" name="registration">BUY NOW</button>
             </div>
           </div>
