@@ -110,10 +110,10 @@
   padding-top: 18px !important;
 }       
 
- .navbar-right{
+ .navbar-right {
   float: right;
   margin-right: -256px;
-  padding-top: 15px;
+  margin-top: 20px;
  }          
 
 .dropdown-toggle .icon-bars-button{
